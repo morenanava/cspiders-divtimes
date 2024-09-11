@@ -26,7 +26,7 @@ mv log_lenseq.txt log_lenseq_$txt_name".txt"
 done
 ```
 
-Now, we have written an [in-house R script](scripts/Fix_seq_ids.R) to read the FASTA-formatted alignments and the tree files in order to replace the long IDs with shorter ones. Once you run the script, you will see both new FASTA sequence files which name ends with "newIDs.fasta" under the [`alignment` directory](00_raw_data/alignment) and Newick-formatted tree files under the [`trees` directory](00_raw_data/trees) following the same file name. In addition, you can find tsv files under the newly created `out_RData` directory with listing the old tags for each taxon, the various elements comprising such tag, and the newly included tag for PAML analyses.
+Now, we have written an [in-house R script](scripts/Fix_seq_ids.R) to read the FASTA-formatted alignments and the tree files in order to replace the long IDs with shorter ones. Once you run the script, you will see both new FASTA sequence files which name ends with "newIDs.fasta" under the [`alignment` directory](00_raw_data/alignment) and Newick-formatted tree files under the [`trees` directory](00_raw_data/trees) following the same file name. In addition, you can find tsv files under the newly created `out_RData` directory with listing the old tags for each taxon, the various elements comprising such tag, and the newly included tag for `PAML` analyses.
 
 Then, we just need to reconvert the newly FASTA-formatted files into PHYLIP format and save our input files!
 
@@ -80,7 +80,7 @@ sed -i '1s/^/218 1\n/' LUCAdup_allcb_calibnames.tree
 
 Now, we can calibrate these topologies following the calibration files we have designed. In a nutshell, the tasks carried out by our [R in-house script](scripts/Include_calibrations.R) are the following:
 
-* Read the input file with calibration information (i.e., [`Calibs_*txt` files inside `calibs`, one per alignment](00_raw_data/calibs/)), and the corresponding input tree files with the tree topology that shall be fixed when running PAML programs (i.e., the uncalibrated tree files we have just generated).
+* Read the input file with calibration information (i.e., [`Calibs_*txt` files inside `calibs`, one per alignment](00_raw_data/calibs/)), and the corresponding input tree files with the tree topology that shall be fixed when running `PAML` programs (i.e., the uncalibrated tree files we have just generated).
 * Find the corresponding nodes for the MRCAs for each calibrated node so that the tag that will be used to identify the calibration for such node (i.e., first column in the calibration files) is incorporated as a node label.
 * Identify nodes that are assigned more than one calibration (i.e., potential duplicates in the calibration file) and decide what to do with them. Then, repeat the previous step with the filtered calibration file, if generated, and output the resulting tree topology with node labels.
 * Read the previously output file as a character vector (not as a `phylo` object!) to replace the node labels with the corresponding node calibrations in `MCMCtree` notation. Columns 4-7 in the calibration files are used for this purpose.

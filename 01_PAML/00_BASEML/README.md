@@ -110,12 +110,12 @@ rsync -avz --copy-links spiders_dating <uname>@<server>:<path_to_your_wd_in_HPC>
 ----
 
 **IMPORTANT INFORMATION REGARDING THE PAML VERSION INSTALLED ON OUR HPC SERVER**
-We have compiled the PAML programs available for the latest version of this software in our HPC server (v4.10.7) given that the cross-bracing approach is implemented. There are two ways that you could follow to use PAML software on your HPC:
+We have compiled the `PAML` programs available for the latest version of this software in our HPC server (v4.10.7) given that the cross-bracing approach is implemented. There are two ways that you could follow to use `PAML` software on your HPC:
 
-* If you have an older version exported to your path variable and do not want to change it: note that you will need to compile `MCMCtree` after modifying the source code: `NS` needs to be increased as there are more than 500 taxa in our alignment! In that way, please open the `mcmctree.c` file inside `src` directory and change the line where `NS` is defined to the following: `#define NS            2000`. Then, please save the changes and compile `MCMCtree` following the PAML installation guidelines given on [the PAML GitHub repository](https://github.com/abacus-gene/paml/wiki#installation). Once the software is compiled, please rename the `mcmctree` and `baseml` binaries to `mcmctree4.10.7` and `baseml4.10.7`, respectively, and save them in your `spiders_dating` working directory so that they are launched using relative paths.
-* If you want to export the latest PAML version to your path variable: note that you will need to compile `MCMCtree` after modifying the source code: `NS` needs to be increased as there are more than 500 taxa in our alignment! In that way, please open the `mcmctree.c` file inside `src` directory and change the line where `NS` is defined to the following: `#define NS            2000`. Then, please export the path to the `bin` directory where you have all the PAML binaries. You will be able to launch these programs by typing `mcmctree` and `baseml` from any location in your file structure if the path has been properly exported.
+* If you have an older version exported to your path variable and do not want to change it: note that you will need to compile `MCMCtree` after modifying the source code: `NS` needs to be increased as there are more than 500 taxa in our alignment! In that way, please open the `mcmctree.c` file inside `src` directory and change the line where `NS` is defined to the following: `#define NS            2000`. Then, please save the changes and compile `MCMCtree` following the `PAML` installation guidelines given on [the `PAML` GitHub repository](https://github.com/abacus-gene/paml/wiki#installation). Once the software is compiled, please rename the `mcmctree` and `baseml` binaries to `mcmctree4.10.7` and `baseml4.10.7`, respectively, and save them in your `spiders_dating` working directory so that they are launched using relative paths.
+* If you want to export the latest `PAML` version to your path variable: note that you will need to compile `MCMCtree` after modifying the source code: `NS` needs to be increased as there are more than 500 taxa in our alignment! In that way, please open the `mcmctree.c` file inside `src` directory and change the line where `NS` is defined to the following: `#define NS            2000`. Then, please export the path to the `bin` directory where you have all the `PAML` binaries. You will be able to launch these programs by typing `mcmctree` and `baseml` from any location in your file structure if the path has been properly exported.
 
-Please note that `MCMCtree` and `BASEML` are the PAML programs that we will use during all the steps of timetree inference. All inference analyses are therefore run by calling these programs via relative paths (if you chose the former) or absolute paths (if you chose the latter). Given that `conda` does not yet have the latest PAML version available, these are the two possibilities you have to work with the latest PAML version on your HPC.
+Please note that `MCMCtree` and `BASEML` are the `PAML` programs that we will use during all the steps of timetree inference. All inference analyses are therefore run by calling these programs via relative paths (if you chose the former) or absolute paths (if you chose the latter). Given that `conda` does not yet have the latest `PAML` version available, these are the two possibilities you have to work with the latest `PAML` version on your HPC.
 
 ----
 
@@ -170,7 +170,7 @@ cd $dir/prepare_baseml
 ../../../mcmctree4.10.7 prepbaseml*ctl
 ```
 
-First, you will see that `MCMCtree` starts parsing the first locus. Then, you will see something like the following printed on your screen (some sections may change depending on the PAML version you have installed on your cluster!):
+First, you will see that `MCMCtree` starts parsing the first locus. Then, you will see something like the following printed on your screen (some sections may change depending on the `PAML` version you have installed on your cluster!):
 
 ```text
 running baseml tmp0001.ctl
