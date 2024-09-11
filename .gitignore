@@ -1,0 +1,20 @@
+# List files/directories that cannot be commited to the repo due
+# to their file size or other incompatibilities
+
+## Files too big to push for core analyses 
+01_PAML/*MCMCtree*/out_RData/*RData
+01_PAML/*MCMCtree*/sum_analyses/00_prior/CLK/*/*/mcmc.txt
+01_PAML/*MCMCtree*/sum_analyses/00_prior/mcmcf4traces*
+01_PAML/*MCMCtree*/sum_analyses/00_prior/mcmc_files_*/mcmc.txt
+01_PAML/*MCMCtree*/sum_analyses/01_posterior/*/*/*/mcmc.txt
+01_PAML/*MCMCtree*/sum_analyses/01_posterior/mcmc_files_*/mcmc.txt
+01_PAML/*MCMCtree*/sum_analyses/01_posterior/mcmcf4traces*
+01_PAML/*MCMCtree*/sum_files_prior/margVScalib/*/*tif
+01_PAML/*MCMCtree*/sum_files_prior/margVScalib/*/ind/*tif
+01_PAML/*MCMCtree*/plots/margVScalib/*/*tif
+01_PAML/*MCMCtree*/plots/margVScalib/*/ind/*tif
+01_PAML/01_MCMCtree/sum_analyses/pipelines_*
+
+## Temporary files and others
+z_tmp
+.vscode
