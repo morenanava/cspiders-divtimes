@@ -52,7 +52,7 @@ tax_range_time_RJG  <- function( occdf, name = "genus", min_ma = "min_ma",
     temp_df$min_ma[i] <- min( occdf[vec, min_ma] )
     temp_df$range_myr[i] <- temp_df$max_ma[i] - temp_df$min_ma[i]
     temp_df$n_occ[i] <- length( vec )
-    #RJG - If we need to group by something, we need to add this to DF
+    # RJG - If we need to group by something, we need to add this to DF
     if( ! is.null( group_by ) ) temp_df$group_by[i] <- occdf[vec[1], group_by]
   }
   row.names( temp_df ) <- NULL
@@ -67,8 +67,8 @@ tax_range_time_RJG  <- function( occdf, name = "genus", min_ma = "min_ma",
     temp_df <- temp_df[order( temp_df$min_ma ), ]
     temp_df$taxon_id <- seq_len( nrow( temp_df ) )
   }
-  #RJG - now if we need to group by: since this is already ordered by FAD or
-  #LAD that is carried through as the order within each group_by category
+  # RJG - now if we need to group by: since this is already ordered by FAD or
+  # LAD that is carried through as the order within each group_by category
   if( ! is.null( group_by ) ){
     temp_df <- temp_df[order( temp_df$group_by ), ]
     temp_df$taxon_id <- seq_len( nrow( temp_df ) )
@@ -80,23 +80,23 @@ tax_range_time_RJG  <- function( occdf, name = "genus", min_ma = "min_ma",
     x_range[2] <- x_range[2] - x_pad
     if( is.null( y_range ) ) y_range <- c (0, nrow( temp_df ) )
 
-    #RJG - If plotting names, remove Y axis and labels, then add text using
-    #text. Position this to right of min age. For lots of taxa needs to be
-    #output to a device defining a sensible aspect ratio
+    # RJG - If plotting names, remove Y axis and labels, then add text using
+    # text. Position this to right of min age. For lots of taxa needs to be
+    # output to a device defining a sensible aspect ratio
     if( plot_names == TRUE ){
 
-      #RJG - If we are adding names in the margin, we can expand outer margin
-      #area to allow these, but we need to do this before we call plot
+      # RJG - If we are adding names in the margin, we can expand outer margin
+      # area to allow these, but we need to do this before we call plot
       if( margin_text == TRUE && ! is.null( group_by ) ){
         maxLength <- max( nchar( temp_df$group_by ) )
-        #This is about the right amount unless modifying with cex
+        # This is about the right amount unless modifying with cex
         par( oma = c( 0,0,0,maxLength/3 ) )
       }
 
       plot( x = NA, y = NA, xlim = x_range, ylim = y_range,axes = TRUE,
             xaxt = "n", xlab = NA, yaxt = "n", ylab = NA, main = title )
 
-      #RJG - add grey boxes
+      # RJG - add grey boxes
       periods <- GTS2020[which( GTS2020$rank=="period" ),]
       for( i in 1:length( periods ) ){
         if( i%%2 == 0 ){
@@ -105,12 +105,12 @@ tax_range_time_RJG  <- function( occdf, name = "genus", min_ma = "min_ma",
                           col = c( "grey90", "white" ), border = NA )
         }
       }
-      #Add a border over the grey boxes to make the axis look OK
+      # Add a border over the grey boxes to make the axis look OK
       graphics::rect( graphics::par()$usr[1], graphics::par()$usr[3],
                       graphics::par()$usr[2], graphics::par()$usr[4],
                       col = NA, border = "black" )
       
-      #SAC: plotting text in italics
+      # SAC: plotting text in italics
       if( ital_font == TRUE ){
         # Source: https://stackoverflow.com/questions/29943251/displaying-values-from-a-character-vector-as-italic-labels-in-boxplot-in-r
         make.italic <- function( x ){
@@ -152,8 +152,8 @@ tax_range_time_RJG  <- function( occdf, name = "genus", min_ma = "min_ma",
     points( x = temp_df$max_ma, y = temp_df$taxon_id, pch = 20, col = "black" )
     points( x = temp_df$min_ma, y = temp_df$taxon_id, pch = 20, col = "black" )
 
-    #RJG - customisations to plot for his publication - change dates to
-    #intervals, do 1DP, and move closer to axis
+    # RJG - customisations to plot for this publication - change dates to
+    # intervals, do 1DP, and move closer to axis
     axis_geo( side = 1, intervals = "periods", exact = TRUE, round = 1,
               cex.axis = 0.9, padj = -1 )
     title( xlab = "Time (Ma)", line = xlabline )
