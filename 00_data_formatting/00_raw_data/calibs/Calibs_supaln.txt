@@ -1,0 +1,6 @@
+name;leaf1;leaf2;minage;mintail;maxage;maxtail;MCMCtree
+Arthropoda;Nar_sp_Diplopoda;Ere_sp_Solifugae;;;;;'B(5.14,6.361,1e-300,0.025)'
+Chelicerata;Ere_sp_Solifugae;Cal_mic_PYC034;;;;;'B(5.09,5.388,1e-300,0.025)'
+Colossendeidae;Hed_sp_IU20166868;Col_IU20136603;;;;;'B(1.605,5.388,1e-300,0.025)'
+Phoxichilidioidea;End_affmer_IU20161142;Pho_IU20136592;;;;;'B(1.605,5.388,1e-300,0.025)'
+Ascorhynchidae;Eur_his_PYC024;Asc_set_IU20166864;;;;;'B(1.4924,5.388,1e-300,0.025)'
