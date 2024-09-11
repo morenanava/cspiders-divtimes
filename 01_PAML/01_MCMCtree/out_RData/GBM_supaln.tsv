@@ -1,0 +1,14 @@
+GBM_supaln
+median	20001
+min	17164
+max	20001
+num_samples_for_ESS	274624
+tail-ESS_med	118980
+tail-ESS_min	65145
+tail-ESS_max	137760
+bulk-ESS_med	92724
+bulk-ESS_min	37005
+bulk-ESS_max	138107
+minRhat	0.999975971245474
+maxRhat	1.00029190588037
+total_samples	313827

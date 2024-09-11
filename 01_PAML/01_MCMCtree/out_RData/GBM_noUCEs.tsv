@@ -1,0 +1,14 @@
+GBM_noUCEs
+median	20001
+min	20001
+max	20001
+num_samples_for_ESS	320016
+tail-ESS_med	143898
+tail-ESS_min	80678
+tail-ESS_max	160189
+bulk-ESS_med	117549
+bulk-ESS_min	45875
+bulk-ESS_max	159033
+minRhat	0.999972298893466
+maxRhat	1.0002454045789
+total_samples	320016

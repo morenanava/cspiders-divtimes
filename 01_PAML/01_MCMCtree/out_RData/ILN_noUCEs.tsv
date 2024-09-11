@@ -1,0 +1,14 @@
+ILN_noUCEs
+median	20001
+min	18112
+max	20001
+num_samples_for_ESS	289792
+tail-ESS_med	141168
+tail-ESS_min	118320
+tail-ESS_max	145776
+bulk-ESS_med	137043
+bulk-ESS_min	101441
+bulk-ESS_max	146475
+minRhat	0.99995712242213
+maxRhat	1.00010744021818
+total_samples	315033

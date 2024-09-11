@@ -1,0 +1,912 @@
+MCMCTREE (paml version 4.9h, March 2018) /mnt/c/Users/sandr/Sync/00_Collabs/Morena_spiders/01_PAML/01_MCMCtree/dummy_aln/dummy_aln.aln
+
+
+*** Locus 1 ***
+    218      2
+
+Nar_sp_Diplopoda                AT
+Lit_for_Chilopoda               AT
+Scu_col_Chilopoda               AT
+Ana_imp_Hexapoda                AT
+Tri_cas_Hexapoda                AT
+Squ_emp_Multicrustacea          AT
+Tri_lon_Branchiopoda            AT
+Ere_sp_Solifugae                AT
+Opi_par_Opiliones               AT
+Pha_opi_Opiliones               AT
+Car_rot_Xiphosura               AT
+Lim_pol_Xiphosura               AT
+Mas_gig_Thelyphonida            AT
+Dam_dia_Amblypigi               AT
+Phr_sp_Amblypygi                AT
+Hep_sp_Mesothelae               AT
+Lip_sp_Mesothelae               AT
+Ric_kar_Ricinulei               AT
+Cry_sp_Ricinulei                AT
+Pse_ger_Ricinulei               AT
+Cal_mic_PYC034                  AT
+Cal_cfbre_PYC033                AT
+Pal_spi_IU2016846               AT
+Ano_val_PYC043                  AT
+Pro_cfard_IU2011757             AT
+Sty_che_PYC044                  AT
+Par_sp_IU2011605                AT
+Par_sp_IU2011675                AT
+Par_ber_IU20161221              AT
+Nym_gir_IU20161429              AT
+Nym_aem_IU20168451186           AT
+Nym_sp_IU2012976                AT
+Nym_dor_IU2016879               AT
+Nym_mar_IU2016889               AT
+Pse_spi_PYC036                  AT
+Aus_cri_PYC109                  AT
+Aus_cor_IU2007305               AT
+Aus_sp_PYC030                   AT
+Pal_ref_PYC042                  AT
+Pal_pac_PYC041                  AT
+Pal_amb_PYC039                  AT
+Pal_fla_PYC040                  AT
+Nym_gro_PYC051                  AT
+Cal_IU2011625                   AT
+Nym_sur_IU201318615             AT
+Nym_cfapi_IU20161460            AT
+Nym_cffor_IU20217458            AT
+Nym_sp_IU20161472               AT
+Nym_mac_IU2011660               AT
+Nym_cfcon_PYC049                AT
+Nym_mol_PYC054                  AT
+Nym_ele_PYC050                  AT
+Nym_mac_PYC053                  AT
+Nym_ten_PYC055                  AT
+Nym_mac_PYC052                  AT
+Bor_aby_PYC045                  AT
+Bor_cfoss_PYC046                AT
+Nym_bia_PYC086                  AT
+Nym_vil_PYC106                  AT
+Nym_pau_PYC120                  AT
+Nym_aus_IU2007129               AT
+Nym_aus_PYC048                  AT
+Nym_cfaus_PYC119                AT
+Nym_cha_IU2007327               AT
+Pen_sp_PYC057                   AT
+Pen_ant_IU2007336               AT
+Pen_sp_PYC112                   AT
+Pen_ant_PYC058                  AT
+Pen_ant_PYC111                  AT
+Pen_cfant_PYC113                AT
+Pan_arm_PYC002                  AT
+Aus_lon_PYC100                  AT
+Aus_gor_PYC001                  AT
+Rhy_mon_PYC072                  AT
+Pyc_sp_IU2007296                AT
+Pen_cfbou_IU2007330             AT
+Pen_sp_PYC069                   AT
+Pyc_gai_IU2007126               AT
+Pyc_sp_IU2007326                AT
+Pyc_lit_PYC097                  AT
+Pyc_sp_IU2011623                AT
+Pyc_IU2011618                   AT
+Pyc_afr_IU2011104               AT
+Pyc_mad_IU2011717               AT
+Pyc_sta_IU20166863              AT
+Pen_gea_IU20164187              AT
+Pyc_ces_IU201610338             AT
+Hed_sp_IU20166868               AT
+Rho_fil_IU20161476              AT
+Col_IU20136603                  AT
+Col_cfpip_IU20161465            AT
+Col_pip_IU200820509             AT
+Col_arc_PYC026                  AT
+Col_mac_IU20113664              AT
+Col_sp_IU20161412               AT
+Col_col_IU200820591             AT
+Col_col_IU200820598             AT
+Col_mac_IU200820494             AT
+Col_min_IU200820602             AT
+Col_mac_IU20111642              AT
+Col_mac_IU200820504             AT
+Col_cfmac_IU20161473            AT
+Col_lep_IU200820651             AT
+Col_hoe_PYC028                  AT
+Col_aus_PYC122                  AT
+Col_sp_PYC123                   AT
+Col_cfgla_PYC098                AT
+Col_gla_PYC101                  AT
+Col_meg_PYC027                  AT
+Col_ten_IU2007130               AT
+Col_sp_IU20161419               AT
+Dec_aus_IU2007219               AT
+Col_aus_IU2007172               AT
+Col_sp_IU2007212                AT
+Eur_his_PYC024                  AT
+Eur_cli_IU2016824               AT
+Eur_sp_IU20121248               AT
+Eur_rap_IU2016818               AT
+Eur_sp_IU2016819                AT
+Asc_set_IU20166864              AT
+Bat_sp_IU20166865               AT
+Asc_qua_IU200820493             AT
+Asc_sp_IU20136582               AT
+Nym_tap_PYC079                  AT
+Asc_cas_IU20148275              AT
+Asc_cas_IU2016883               AT
+Asc_aby_PYC021                  AT
+Asc_lat_IU2016816               AT
+Asc_sp_IU2011748                AT
+End_sp_IU20161416               AT
+End_aus_IU2007207               AT
+End_aus_PYC125                  AT
+End_affmer_IU20161142           AT
+End_sp_IU2016863                AT
+End_mol_PYC104                  AT
+End_fla_IU2016840               AT
+End_sp_IU201318638              AT
+Pho_IU20136592                  AT
+Pho_fem_PYC068                  AT
+Ano_pec_IU2016806               AT
+Ano_sp_IU2011699                AT
+Ano_sp_IU20161410               AT
+Ano_gla_IU2016877               AT
+Ano_mic_IU2016804               AT
+Pho_IU20136598                  AT
+Ano_cfcal_IU2016811             AT
+Ano_gan_IU2016854               AT
+Ano_dig_IU2016876               AT
+Ano_sp_IU201212791266           AT
+Ano_mas_IU20161124              AT
+Ano_sp_IU201318611              AT
+Ano_pet_PYC067                  AT
+Ano_ins_IU2016808               AT
+Pho_IU201318544                 AT
+Bat_sp_IU20161417               AT
+Pal_IU20092                     AT
+Pal_cro_IU2011693               AT
+Pal_sp_IU20161471               AT
+Pal_cfvir_IU20166879            AT
+Pal_ang_IU20166873              AT
+Pal_pat_IU200820510             AT
+Pal_cfhod_PYC121                AT
+Pal_sp_PYC010                   AT
+Bat_sp_IU20161469               AT
+Bat_mol_IU200820672             AT
+Pal_IU20136558                  AT
+Pal_pil_IU2007310               AT
+Pal_can_IU2016814               AT
+Pal_sch_IU2016813               AT
+Pal_sp_PYC059                   AT
+Pal_cfpat_PYC061                AT
+Pal_cfhie_PYC062                AT
+Pal_pat_IU2007134               AT
+Ach_gra_IU2016851888            AT
+Ach_saw_IU20168841073           AT
+Tan_orb_IU2016872               AT
+Tan_orb_GNBK                    AT
+Tan_orb_PYC019                  AT
+Tan_tay_IU2016858               AT
+Tan_cal_PYC018                  AT
+Tan_ing_IU2016867               AT
+Tan_acu_IU2016856               AT
+Tan_bou_IU20161074              AT
+Tan_hum_IU2016868               AT
+Amm_dir_IU2016833               AT
+Amm_spi_IU2016826               AT
+Amm_exo_IU2016829               AT
+Nym_mus_IU201318640             AT
+Nym_cur_IU2011760               AT
+Nym_duo_IU2016812               AT
+Amm_IU20161393                  AT
+Ach_sp_IU201318597              AT
+Ach_tra_PYC008                  AT
+Ach_spi_PYC108                  AT
+Amm_PYC004                      AT
+Aus_juv_PYC115                  AT
+Aus_pol_PYC114                  AT
+Aus_pra_PYC127                  AT
+Cil_sca_IU20166862              AT
+Cil_sew_IU2011624               AT
+Ser_sp_PYC118                   AT
+Ser_het_IU201315606             AT
+Ser_sp_IU201319239              AT
+Amm_hil_GNBK                    AT
+Ach_sp_IU2011659                AT
+Ach_sp_IU2011764                AT
+Amm_PYC005                      AT
+Amm_adu_IU2007231               AT
+Amm_adu_PYC099                  AT
+Amm_gig_IU20161421              AT
+Amm_cftib_IU2007247             AT
+Amm_gla_PYC013                  AT
+Amm_sp_PYC015                   AT
+Amm_sp_PYC107                   AT
+Amm_sp_IU2007324                AT
+Amm_sp_PYC009                   AT
+Amm_sp_PYC011                   AT
+Amm_sp_PYC020                   AT
+
+
+
+Printing out site pattern counts
+
+
+       218          2  P
+
+Nar_sp_Diplopoda                AT
+Lit_for_Chilopoda               AT
+Scu_col_Chilopoda               AT
+Ana_imp_Hexapoda                AT
+Tri_cas_Hexapoda                AT
+Squ_emp_Multicrustacea          AT
+Tri_lon_Branchiopoda            AT
+Ere_sp_Solifugae                AT
+Opi_par_Opiliones               AT
+Pha_opi_Opiliones               AT
+Car_rot_Xiphosura               AT
+Lim_pol_Xiphosura               AT
+Mas_gig_Thelyphonida            AT
+Dam_dia_Amblypigi               AT
+Phr_sp_Amblypygi                AT
+Hep_sp_Mesothelae               AT
+Lip_sp_Mesothelae               AT
+Ric_kar_Ricinulei               AT
+Cry_sp_Ricinulei                AT
+Pse_ger_Ricinulei               AT
+Cal_mic_PYC034                  AT
+Cal_cfbre_PYC033                AT
+Pal_spi_IU2016846               AT
+Ano_val_PYC043                  AT
+Pro_cfard_IU2011757             AT
+Sty_che_PYC044                  AT
+Par_sp_IU2011605                AT
+Par_sp_IU2011675                AT
+Par_ber_IU20161221              AT
+Nym_gir_IU20161429              AT
+Nym_aem_IU20168451186           AT
+Nym_sp_IU2012976                AT
+Nym_dor_IU2016879               AT
+Nym_mar_IU2016889               AT
+Pse_spi_PYC036                  AT
+Aus_cri_PYC109                  AT
+Aus_cor_IU2007305               AT
+Aus_sp_PYC030                   AT
+Pal_ref_PYC042                  AT
+Pal_pac_PYC041                  AT
+Pal_amb_PYC039                  AT
+Pal_fla_PYC040                  AT
+Nym_gro_PYC051                  AT
+Cal_IU2011625                   AT
+Nym_sur_IU201318615             AT
+Nym_cfapi_IU20161460            AT
+Nym_cffor_IU20217458            AT
+Nym_sp_IU20161472               AT
+Nym_mac_IU2011660               AT
+Nym_cfcon_PYC049                AT
+Nym_mol_PYC054                  AT
+Nym_ele_PYC050                  AT
+Nym_mac_PYC053                  AT
+Nym_ten_PYC055                  AT
+Nym_mac_PYC052                  AT
+Bor_aby_PYC045                  AT
+Bor_cfoss_PYC046                AT
+Nym_bia_PYC086                  AT
+Nym_vil_PYC106                  AT
+Nym_pau_PYC120                  AT
+Nym_aus_IU2007129               AT
+Nym_aus_PYC048                  AT
+Nym_cfaus_PYC119                AT
+Nym_cha_IU2007327               AT
+Pen_sp_PYC057                   AT
+Pen_ant_IU2007336               AT
+Pen_sp_PYC112                   AT
+Pen_ant_PYC058                  AT
+Pen_ant_PYC111                  AT
+Pen_cfant_PYC113                AT
+Pan_arm_PYC002                  AT
+Aus_lon_PYC100                  AT
+Aus_gor_PYC001                  AT
+Rhy_mon_PYC072                  AT
+Pyc_sp_IU2007296                AT
+Pen_cfbou_IU2007330             AT
+Pen_sp_PYC069                   AT
+Pyc_gai_IU2007126               AT
+Pyc_sp_IU2007326                AT
+Pyc_lit_PYC097                  AT
+Pyc_sp_IU2011623                AT
+Pyc_IU2011618                   AT
+Pyc_afr_IU2011104               AT
+Pyc_mad_IU2011717               AT
+Pyc_sta_IU20166863              AT
+Pen_gea_IU20164187              AT
+Pyc_ces_IU201610338             AT
+Hed_sp_IU20166868               AT
+Rho_fil_IU20161476              AT
+Col_IU20136603                  AT
+Col_cfpip_IU20161465            AT
+Col_pip_IU200820509             AT
+Col_arc_PYC026                  AT
+Col_mac_IU20113664              AT
+Col_sp_IU20161412               AT
+Col_col_IU200820591             AT
+Col_col_IU200820598             AT
+Col_mac_IU200820494             AT
+Col_min_IU200820602             AT
+Col_mac_IU20111642              AT
+Col_mac_IU200820504             AT
+Col_cfmac_IU20161473            AT
+Col_lep_IU200820651             AT
+Col_hoe_PYC028                  AT
+Col_aus_PYC122                  AT
+Col_sp_PYC123                   AT
+Col_cfgla_PYC098                AT
+Col_gla_PYC101                  AT
+Col_meg_PYC027                  AT
+Col_ten_IU2007130               AT
+Col_sp_IU20161419               AT
+Dec_aus_IU2007219               AT
+Col_aus_IU2007172               AT
+Col_sp_IU2007212                AT
+Eur_his_PYC024                  AT
+Eur_cli_IU2016824               AT
+Eur_sp_IU20121248               AT
+Eur_rap_IU2016818               AT
+Eur_sp_IU2016819                AT
+Asc_set_IU20166864              AT
+Bat_sp_IU20166865               AT
+Asc_qua_IU200820493             AT
+Asc_sp_IU20136582               AT
+Nym_tap_PYC079                  AT
+Asc_cas_IU20148275              AT
+Asc_cas_IU2016883               AT
+Asc_aby_PYC021                  AT
+Asc_lat_IU2016816               AT
+Asc_sp_IU2011748                AT
+End_sp_IU20161416               AT
+End_aus_IU2007207               AT
+End_aus_PYC125                  AT
+End_affmer_IU20161142           AT
+End_sp_IU2016863                AT
+End_mol_PYC104                  AT
+End_fla_IU2016840               AT
+End_sp_IU201318638              AT
+Pho_IU20136592                  AT
+Pho_fem_PYC068                  AT
+Ano_pec_IU2016806               AT
+Ano_sp_IU2011699                AT
+Ano_sp_IU20161410               AT
+Ano_gla_IU2016877               AT
+Ano_mic_IU2016804               AT
+Pho_IU20136598                  AT
+Ano_cfcal_IU2016811             AT
+Ano_gan_IU2016854               AT
+Ano_dig_IU2016876               AT
+Ano_sp_IU201212791266           AT
+Ano_mas_IU20161124              AT
+Ano_sp_IU201318611              AT
+Ano_pet_PYC067                  AT
+Ano_ins_IU2016808               AT
+Pho_IU201318544                 AT
+Bat_sp_IU20161417               AT
+Pal_IU20092                     AT
+Pal_cro_IU2011693               AT
+Pal_sp_IU20161471               AT
+Pal_cfvir_IU20166879            AT
+Pal_ang_IU20166873              AT
+Pal_pat_IU200820510             AT
+Pal_cfhod_PYC121                AT
+Pal_sp_PYC010                   AT
+Bat_sp_IU20161469               AT
+Bat_mol_IU200820672             AT
+Pal_IU20136558                  AT
+Pal_pil_IU2007310               AT
+Pal_can_IU2016814               AT
+Pal_sch_IU2016813               AT
+Pal_sp_PYC059                   AT
+Pal_cfpat_PYC061                AT
+Pal_cfhie_PYC062                AT
+Pal_pat_IU2007134               AT
+Ach_gra_IU2016851888            AT
+Ach_saw_IU20168841073           AT
+Tan_orb_IU2016872               AT
+Tan_orb_GNBK                    AT
+Tan_orb_PYC019                  AT
+Tan_tay_IU2016858               AT
+Tan_cal_PYC018                  AT
+Tan_ing_IU2016867               AT
+Tan_acu_IU2016856               AT
+Tan_bou_IU20161074              AT
+Tan_hum_IU2016868               AT
+Amm_dir_IU2016833               AT
+Amm_spi_IU2016826               AT
+Amm_exo_IU2016829               AT
+Nym_mus_IU201318640             AT
+Nym_cur_IU2011760               AT
+Nym_duo_IU2016812               AT
+Amm_IU20161393                  AT
+Ach_sp_IU201318597              AT
+Ach_tra_PYC008                  AT
+Ach_spi_PYC108                  AT
+Amm_PYC004                      AT
+Aus_juv_PYC115                  AT
+Aus_pol_PYC114                  AT
+Aus_pra_PYC127                  AT
+Cil_sca_IU20166862              AT
+Cil_sew_IU2011624               AT
+Ser_sp_PYC118                   AT
+Ser_het_IU201315606             AT
+Ser_sp_IU201319239              AT
+Amm_hil_GNBK                    AT
+Ach_sp_IU2011659                AT
+Ach_sp_IU2011764                AT
+Amm_PYC005                      AT
+Amm_adu_IU2007231               AT
+Amm_adu_PYC099                  AT
+Amm_gig_IU20161421              AT
+Amm_cftib_IU2007247             AT
+Amm_gla_PYC013                  AT
+Amm_sp_PYC015                   AT
+Amm_sp_PYC107                   AT
+Amm_sp_IU2007324                AT
+Amm_sp_PYC009                   AT
+Amm_sp_PYC011                   AT
+Amm_sp_PYC020                   AT
+
+
+
+    1    1
+
+
+Frequencies..
+                                    T      C      A      G
+Nar_sp_Diplopoda               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Lit_for_Chilopoda              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Scu_col_Chilopoda              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ana_imp_Hexapoda               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tri_cas_Hexapoda               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Squ_emp_Multicrustacea         0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tri_lon_Branchiopoda           0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ere_sp_Solifugae               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Opi_par_Opiliones              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pha_opi_Opiliones              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Car_rot_Xiphosura              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Lim_pol_Xiphosura              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Mas_gig_Thelyphonida           0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Dam_dia_Amblypigi              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Phr_sp_Amblypygi               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Hep_sp_Mesothelae              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Lip_sp_Mesothelae              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ric_kar_Ricinulei              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Cry_sp_Ricinulei               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pse_ger_Ricinulei              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Cal_mic_PYC034                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Cal_cfbre_PYC033               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_spi_IU2016846              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_val_PYC043                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pro_cfard_IU2011757            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Sty_che_PYC044                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Par_sp_IU2011605               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Par_sp_IU2011675               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Par_ber_IU20161221             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_gir_IU20161429             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_aem_IU20168451186          0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_sp_IU2012976               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_dor_IU2016879              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_mar_IU2016889              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pse_spi_PYC036                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Aus_cri_PYC109                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Aus_cor_IU2007305              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Aus_sp_PYC030                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_ref_PYC042                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_pac_PYC041                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_amb_PYC039                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_fla_PYC040                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_gro_PYC051                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Cal_IU2011625                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_sur_IU201318615            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_cfapi_IU20161460           0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_cffor_IU20217458           0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_sp_IU20161472              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_mac_IU2011660              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_cfcon_PYC049               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_mol_PYC054                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_ele_PYC050                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_mac_PYC053                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_ten_PYC055                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_mac_PYC052                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Bor_aby_PYC045                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Bor_cfoss_PYC046               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_bia_PYC086                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_vil_PYC106                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_pau_PYC120                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_aus_IU2007129              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_aus_PYC048                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_cfaus_PYC119               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_cha_IU2007327              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_sp_PYC057                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_ant_IU2007336              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_sp_PYC112                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_ant_PYC058                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_ant_PYC111                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_cfant_PYC113               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pan_arm_PYC002                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Aus_lon_PYC100                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Aus_gor_PYC001                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Rhy_mon_PYC072                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_sp_IU2007296               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_cfbou_IU2007330            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_sp_PYC069                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_gai_IU2007126              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_sp_IU2007326               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_lit_PYC097                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_sp_IU2011623               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_IU2011618                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_afr_IU2011104              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_mad_IU2011717              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_sta_IU20166863             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pen_gea_IU20164187             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pyc_ces_IU201610338            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Hed_sp_IU20166868              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Rho_fil_IU20161476             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_IU20136603                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_cfpip_IU20161465           0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_pip_IU200820509            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_arc_PYC026                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_mac_IU20113664             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_sp_IU20161412              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_col_IU200820591            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_col_IU200820598            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_mac_IU200820494            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_min_IU200820602            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_mac_IU20111642             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_mac_IU200820504            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_cfmac_IU20161473           0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_lep_IU200820651            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_hoe_PYC028                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_aus_PYC122                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_sp_PYC123                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_cfgla_PYC098               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_gla_PYC101                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_meg_PYC027                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_ten_IU2007130              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_sp_IU20161419              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Dec_aus_IU2007219              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_aus_IU2007172              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Col_sp_IU2007212               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Eur_his_PYC024                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Eur_cli_IU2016824              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Eur_sp_IU20121248              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Eur_rap_IU2016818              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Eur_sp_IU2016819               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Asc_set_IU20166864             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Bat_sp_IU20166865              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Asc_qua_IU200820493            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Asc_sp_IU20136582              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_tap_PYC079                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Asc_cas_IU20148275             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Asc_cas_IU2016883              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Asc_aby_PYC021                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Asc_lat_IU2016816              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Asc_sp_IU2011748               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+End_sp_IU20161416              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+End_aus_IU2007207              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+End_aus_PYC125                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+End_affmer_IU20161142          0.50000 0.00000 0.50000 0.00000 GC = 0.000
+End_sp_IU2016863               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+End_mol_PYC104                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+End_fla_IU2016840              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+End_sp_IU201318638             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pho_IU20136592                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pho_fem_PYC068                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_pec_IU2016806              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_sp_IU2011699               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_sp_IU20161410              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_gla_IU2016877              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_mic_IU2016804              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pho_IU20136598                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_cfcal_IU2016811            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_gan_IU2016854              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_dig_IU2016876              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_sp_IU201212791266          0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_mas_IU20161124             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_sp_IU201318611             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_pet_PYC067                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ano_ins_IU2016808              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pho_IU201318544                0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Bat_sp_IU20161417              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_IU20092                    0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_cro_IU2011693              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_sp_IU20161471              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_cfvir_IU20166879           0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_ang_IU20166873             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_pat_IU200820510            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_cfhod_PYC121               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_sp_PYC010                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Bat_sp_IU20161469              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Bat_mol_IU200820672            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_IU20136558                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_pil_IU2007310              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_can_IU2016814              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_sch_IU2016813              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_sp_PYC059                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_cfpat_PYC061               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_cfhie_PYC062               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Pal_pat_IU2007134              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ach_gra_IU2016851888           0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ach_saw_IU20168841073          0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_orb_IU2016872              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_orb_GNBK                   0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_orb_PYC019                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_tay_IU2016858              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_cal_PYC018                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_ing_IU2016867              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_acu_IU2016856              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_bou_IU20161074             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Tan_hum_IU2016868              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_dir_IU2016833              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_spi_IU2016826              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_exo_IU2016829              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_mus_IU201318640            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_cur_IU2011760              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Nym_duo_IU2016812              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_IU20161393                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ach_sp_IU201318597             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ach_tra_PYC008                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ach_spi_PYC108                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_PYC004                     0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Aus_juv_PYC115                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Aus_pol_PYC114                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Aus_pra_PYC127                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Cil_sca_IU20166862             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Cil_sew_IU2011624              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ser_sp_PYC118                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ser_het_IU201315606            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ser_sp_IU201319239             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_hil_GNBK                   0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ach_sp_IU2011659               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Ach_sp_IU2011764               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_PYC005                     0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_adu_IU2007231              0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_adu_PYC099                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_gig_IU20161421             0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_cftib_IU2007247            0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_gla_PYC013                 0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_sp_PYC015                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_sp_PYC107                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_sp_IU2007324               0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_sp_PYC009                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_sp_PYC011                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+Amm_sp_PYC020                  0.50000 0.00000 0.50000 0.00000 GC = 0.000
+
+Homogeneity statistic: X2 = 0.00000 G = 0.00000 
+
+Average                        0.50000 0.00000 0.50000 0.00000
+
+# constant sites:      2 (100.00%)
+ln Lmax (unconstrained) = -1.386294
+
+Species tree for FigTree.
+((1_Nar_sp_Diplopoda, ((2_Lit_for_Chilopoda, 3_Scu_col_Chilopoda) 222 , ((4_Ana_imp_Hexapoda, 5_Tri_cas_Hexapoda) 224 , (6_Squ_emp_Multicrustacea, 7_Tri_lon_Branchiopoda) 225 ) 223 ) 221 ) 220 , (((8_Ere_sp_Solifugae, (9_Opi_par_Opiliones, 10_Pha_opi_Opiliones) 229 ) 228 , ((11_Car_rot_Xiphosura, 12_Lim_pol_Xiphosura) 231 , ((13_Mas_gig_Thelyphonida, (14_Dam_dia_Amblypigi, 15_Phr_sp_Amblypygi) 234 ) 233 , ((16_Hep_sp_Mesothelae, 17_Lip_sp_Mesothelae) 236 , (18_Ric_kar_Ricinulei, (19_Cry_sp_Ricinulei, 20_Pse_ger_Ricinulei) 238 ) 237 ) 235 ) 232 ) 230 ) 227 , (((21_Cal_mic_PYC034, (22_Cal_cfbre_PYC033, 23_Pal_spi_IU2016846) 242 ) 241 , (24_Ano_val_PYC043, (25_Pro_cfard_IU2011757, ((26_Sty_che_PYC044, (27_Par_sp_IU2011605, 28_Par_sp_IU2011675) 247 ) 246 , ((29_Par_ber_IU20161221, (30_Nym_gir_IU20161429, ((31_Nym_aem_IU20168451186, 32_Nym_sp_IU2012976) 252 , (33_Nym_dor_IU2016879, 34_Nym_mar_IU2016889) 253 ) 251 ) 250 ) 249 , (((35_Pse_spi_PYC036, (36_Aus_cri_PYC109, (37_Aus_cor_IU2007305, 38_Aus_sp_PYC030) 258 ) 257 ) 256 , (39_Pal_ref_PYC042, (40_Pal_pac_PYC041, (41_Pal_amb_PYC039, 42_Pal_fla_PYC040) 261 ) 260 ) 259 ) 255 , (43_Nym_gro_PYC051, (((44_Cal_IU2011625, 45_Nym_sur_IU201318615) 265 , (46_Nym_cfapi_IU20161460, (47_Nym_cffor_IU20217458, (48_Nym_sp_IU20161472, (49_Nym_mac_IU2011660, (50_Nym_cfcon_PYC049, 51_Nym_mol_PYC054) 270 ) 269 ) 268 ) 267 ) 266 ) 264 , ((52_Nym_ele_PYC050, (53_Nym_mac_PYC053, (54_Nym_ten_PYC055, (55_Nym_mac_PYC052, (56_Bor_aby_PYC045, 57_Bor_cfoss_PYC046) 276 ) 275 ) 274 ) 273 ) 272 , (((58_Nym_bia_PYC086, 59_Nym_vil_PYC106) 279 , (60_Nym_pau_PYC120, (61_Nym_aus_IU2007129, (62_Nym_aus_PYC048, 63_Nym_cfaus_PYC119) 282 ) 281 ) 280 ) 278 , (64_Nym_cha_IU2007327, (65_Pen_sp_PYC057, ((66_Pen_ant_IU2007336, 67_Pen_sp_PYC112) 286 , (68_Pen_ant_PYC058, (69_Pen_ant_PYC111, 70_Pen_cfant_PYC113) 288 ) 287 ) 285 ) 284 ) 283 ) 277 ) 271 ) 263 ) 262 ) 254 ) 248 ) 245 ) 244 ) 243 ) 240 , ((71_Pan_arm_PYC002, (72_Aus_lon_PYC100, 73_Aus_gor_PYC001) 291 ) 290 , (((74_Rhy_mon_PYC072, ((75_Pyc_sp_IU2007296, (76_Pen_cfbou_IU2007330, 77_Pen_sp_PYC069) 297 ) 296 , ((78_Pyc_gai_IU2007126, 79_Pyc_sp_IU2007326) 299 , (80_Pyc_lit_PYC097, ((81_Pyc_sp_IU2011623, (82_Pyc_IU2011618, 83_Pyc_afr_IU2011104) 303 ) 302 , (84_Pyc_mad_IU2011717, (85_Pyc_sta_IU20166863, (86_Pen_gea_IU20164187, 87_Pyc_ces_IU201610338) 306 ) 305 ) 304 ) 301 ) 300 ) 298 ) 295 ) 294 , ((88_Hed_sp_IU20166868, 89_Rho_fil_IU20161476) 308 , ((90_Col_IU20136603, (91_Col_cfpip_IU20161465, 92_Col_pip_IU200820509) 311 ) 310 , (((93_Col_arc_PYC026, (94_Col_mac_IU20113664, 95_Col_sp_IU20161412) 315 ) 314 , ((96_Col_col_IU200820591, 97_Col_col_IU200820598) 317 , ((98_Col_mac_IU200820494, 99_Col_min_IU200820602) 319 , (100_Col_mac_IU20111642, (101_Col_mac_IU200820504, (102_Col_cfmac_IU20161473, 103_Col_lep_IU200820651) 322 ) 321 ) 320 ) 318 ) 316 ) 313 , (104_Col_hoe_PYC028, ((105_Col_aus_PYC122, 106_Col_sp_PYC123) 325 , ((107_Col_cfgla_PYC098, 108_Col_gla_PYC101) 327 , ((109_Col_meg_PYC027, 110_Col_ten_IU2007130) 329 , (111_Col_sp_IU20161419, (112_Dec_aus_IU2007219, (113_Col_aus_IU2007172, 114_Col_sp_IU2007212) 332 ) 331 ) 330 ) 328 ) 326 ) 324 ) 323 ) 312 ) 309 ) 307 ) 293 , (((115_Eur_his_PYC024, (116_Eur_cli_IU2016824, (117_Eur_sp_IU20121248, (118_Eur_rap_IU2016818, 119_Eur_sp_IU2016819) 338 ) 337 ) 336 ) 335 , ((120_Asc_set_IU20166864, (121_Bat_sp_IU20166865, (122_Asc_qua_IU200820493, 123_Asc_sp_IU20136582) 342 ) 341 ) 340 , (124_Nym_tap_PYC079, ((125_Asc_cas_IU20148275, 126_Asc_cas_IU2016883) 345 , (127_Asc_aby_PYC021, (128_Asc_lat_IU2016816, 129_Asc_sp_IU2011748) 347 ) 346 ) 344 ) 343 ) 339 ) 334 , ((((130_End_sp_IU20161416, (131_End_aus_IU2007207, 132_End_aus_PYC125) 352 ) 351 , ((133_End_affmer_IU20161142, 134_End_sp_IU2016863) 354 , (135_End_mol_PYC104, (136_End_fla_IU2016840, 137_End_sp_IU201318638) 356 ) 355 ) 353 ) 350 , ((138_Pho_IU20136592, 139_Pho_fem_PYC068) 358 , ((140_Ano_pec_IU2016806, 141_Ano_sp_IU2011699) 360 , (142_Ano_sp_IU20161410, ((143_Ano_gla_IU2016877, (144_Ano_mic_IU2016804, 145_Pho_IU20136598) 364 ) 363 , ((146_Ano_cfcal_IU2016811, 147_Ano_gan_IU2016854) 366 , ((148_Ano_dig_IU2016876, 149_Ano_sp_IU201212791266) 368 , ((150_Ano_mas_IU20161124, 151_Ano_sp_IU201318611) 370 , (152_Ano_pet_PYC067, (153_Ano_ins_IU2016808, 154_Pho_IU201318544) 372 ) 371 ) 369 ) 367 ) 365 ) 362 ) 361 ) 359 ) 357 ) 349 , (((155_Bat_sp_IU20161417, 156_Pal_IU20092) 375 , ((157_Pal_cro_IU2011693, (158_Pal_sp_IU20161471, (159_Pal_cfvir_IU20166879, (160_Pal_ang_IU20166873, 161_Pal_pat_IU200820510) 380 ) 379 ) 378 ) 377 , (((162_Pal_cfhod_PYC121, 163_Pal_sp_PYC010) 383 , (164_Bat_sp_IU20161469, (165_Bat_mol_IU200820672, 166_Pal_IU20136558) 385 ) 384 ) 382 , (167_Pal_pil_IU2007310, ((168_Pal_can_IU2016814, 169_Pal_sch_IU2016813) 388 , (170_Pal_sp_PYC059, (171_Pal_cfpat_PYC061, (172_Pal_cfhie_PYC062, 173_Pal_pat_IU2007134) 391 ) 390 ) 389 ) 387 ) 386 ) 381 ) 376 ) 374 , (((174_Ach_gra_IU2016851888, 175_Ach_saw_IU20168841073) 394 , ((176_Tan_orb_IU2016872, (177_Tan_orb_GNBK, 178_Tan_orb_PYC019) 397 ) 396 , (179_Tan_tay_IU2016858, (180_Tan_cal_PYC018, (181_Tan_ing_IU2016867, (182_Tan_acu_IU2016856, (183_Tan_bou_IU20161074, 184_Tan_hum_IU2016868) 402 ) 401 ) 400 ) 399 ) 398 ) 395 ) 393 , ((((185_Amm_dir_IU2016833, 186_Amm_spi_IU2016826) 406 , (187_Amm_exo_IU2016829, (188_Nym_mus_IU201318640, (189_Nym_cur_IU2011760, 190_Nym_duo_IU2016812) 409 ) 408 ) 407 ) 405 , (191_Amm_IU20161393, (192_Ach_sp_IU201318597, (193_Ach_tra_PYC008, (194_Ach_spi_PYC108, ((195_Amm_PYC004, 196_Aus_juv_PYC115) 415 , (197_Aus_pol_PYC114, 198_Aus_pra_PYC127) 416 ) 414 ) 413 ) 412 ) 411 ) 410 ) 404 , (((199_Cil_sca_IU20166862, 200_Cil_sew_IU2011624) 419 , (201_Ser_sp_PYC118, (202_Ser_het_IU201315606, 203_Ser_sp_IU201319239) 421 ) 420 ) 418 , ((204_Amm_hil_GNBK, (205_Ach_sp_IU2011659, 206_Ach_sp_IU2011764) 424 ) 423 , (207_Amm_PYC005, ((208_Amm_adu_IU2007231, 209_Amm_adu_PYC099) 427 , (210_Amm_gig_IU20161421, (211_Amm_cftib_IU2007247, ((212_Amm_gla_PYC013, (213_Amm_sp_PYC015, 214_Amm_sp_PYC107) 432 ) 431 , (215_Amm_sp_IU2007324, (216_Amm_sp_PYC009, (217_Amm_sp_PYC011, 218_Amm_sp_PYC020) 435 ) 434 ) 433 ) 430 ) 429 ) 428 ) 426 ) 425 ) 422 ) 417 ) 403 ) 392 ) 373 ) 348 ) 333 ) 292 ) 289 ) 239 ) 226 ) 219 ;
+
+((Nar_sp_Diplopoda: 5.191193, ((Lit_for_Chilopoda: 3.870015, Scu_col_Chilopoda: 3.870015) [&95%={2.9402, 4.48405}]: 0.928647, ((Ana_imp_Hexapoda: 3.077077, Tri_cas_Hexapoda: 3.077077) [&95%={2.27588, 3.88412}]: 0.745360, (Squ_emp_Multicrustacea: 2.943702, Tri_lon_Branchiopoda: 2.943702) [&95%={2.1472, 3.77307}]: 0.878735) [&95%={2.98557, 4.47148}]: 0.976226) [&95%={4.3666, 5.16618}]: 0.392530) [&95%={4.90656, 5.48943}]: 0.144434, (((Ere_sp_Solifugae: 4.186789, (Opi_par_Opiliones: 1.552269, Pha_opi_Opiliones: 1.552269) [&95%={0.832017, 2.35177}]: 2.634520) [&95%={3.62046, 4.59003}]: 0.586331, ((Car_rot_Xiphosura: 2.603353, Lim_pol_Xiphosura: 2.603353) [&95%={1.71549, 3.42369}]: 1.967686, ((Mas_gig_Thelyphonida: 3.630828, (Dam_dia_Amblypigi: 2.191612, Phr_sp_Amblypygi: 2.191612) [&95%={1.47282, 2.83264}]: 1.439216) [&95%={2.93752, 4.11166}]: 0.471527, ((Hep_sp_Mesothelae: 1.770834, Lip_sp_Mesothelae: 1.770834) [&95%={1.09099, 2.46013}]: 1.852549, (Ric_kar_Ricinulei: 1.903351, (Cry_sp_Ricinulei: 1.339922, Pse_ger_Ricinulei: 1.339922) [&95%={0.820436, 1.91985}]: 0.563429) [&95%={1.22589, 2.55927}]: 1.720031) [&95%={2.94124, 4.09785}]: 0.478973) [&95%={3.49307, 4.5019}]: 0.468684) [&95%={4.1486, 4.87044}]: 0.202081) [&95%={4.41657, 5.03153}]: 0.480911, (((Cal_mic_PYC034: 2.349336, (Cal_cfbre_PYC033: 1.945007, Pal_spi_IU2016846: 1.945007) [&95%={1.49686, 2.39755}]: 0.404329) [&95%={1.86089, 2.80966}]: 0.617938, (Ano_val_PYC043: 2.738603, (Pro_cfard_IU2011757: 2.651395, ((Sty_che_PYC044: 2.344951, (Par_sp_IU2011605: 1.271544, Par_sp_IU2011675: 1.271544) [&95%={0.888433, 1.67887}]: 1.073407) [&95%={1.9699, 2.72006}]: 0.177044, ((Par_ber_IU20161221: 1.757512, (Nym_gir_IU20161429: 0.876560, ((Nym_aem_IU20168451186: 0.177028, Nym_sp_IU2012976: 0.177028) [&95%={0.109791, 0.272678}]: 0.539562, (Nym_dor_IU2016879: 0.341725, Nym_mar_IU2016889: 0.341725) [&95%={0.226756, 0.492414}]: 0.374865) [&95%={0.501713, 0.971958}]: 0.159971) [&95%={0.623273, 1.16941}]: 0.880952) [&95%={1.42419, 2.10454}]: 0.631706, (((Pse_spi_PYC036: 1.565096, (Aus_cri_PYC109: 0.741470, (Aus_cor_IU2007305: 0.307741, Aus_sp_PYC030: 0.307741) [&95%={0.179457, 0.483515}]: 0.433729) [&95%={0.499224, 1.02864}]: 0.823625) [&95%={1.25101, 1.89933}]: 0.317528, (Pal_ref_PYC042: 1.209814, (Pal_pac_PYC041: 0.922454, (Pal_amb_PYC039: 0.705844, Pal_fla_PYC040: 0.705844) [&95%={0.498841, 0.953381}]: 0.216610) [&95%={0.675617, 1.20512}]: 0.287359) [&95%={0.912607, 1.53485}]: 0.672810) [&95%={1.55767, 2.21874}]: 0.434048, (Nym_gro_PYC051: 2.149718, (((Cal_IU2011625: 1.557064, Nym_sur_IU201318615: 1.557064) [&95%={1.27085, 1.86329}]: 0.232065, (Nym_cfapi_IU20161460: 1.607633, (Nym_cffor_IU20217458: 1.366530, (Nym_sp_IU20161472: 1.182612, (Nym_mac_IU2011660: 0.990989, (Nym_cfcon_PYC049: 0.027517, Nym_mol_PYC054: 0.027517) [&95%={0.0123438, 0.052067}]: 0.963471) [&95%={0.769664, 1.24113}]: 0.191624) [&95%={0.943239, 1.44596}]: 0.183917) [&95%={1.10823, 1.6466}]: 0.241104) [&95%={1.32634, 1.90829}]: 0.181495) [&95%={1.48878, 2.10431}]: 0.243056, ((Nym_ele_PYC050: 1.015504, (Nym_mac_PYC053: 0.814839, (Nym_ten_PYC055: 0.548449, (Nym_mac_PYC052: 0.394556, (Bor_aby_PYC045: 0.138837, Bor_cfoss_PYC046: 0.138837) [&95%={0.0823933, 0.218499}]: 0.255719) [&95%={0.267332, 0.55591}]: 0.153893) [&95%={0.380771, 0.754691}]: 0.266390) [&95%={0.584364, 1.08208}]: 0.200665) [&95%={0.748562, 1.3117}]: 0.868422, (((Nym_bia_PYC086: 0.380241, Nym_vil_PYC106: 0.380241) [&95%={0.242225, 0.561999}]: 0.426800, (Nym_pau_PYC120: 0.044396, (Nym_aus_IU2007129: 0.039981, (Nym_aus_PYC048: 0.035359, Nym_cfaus_PYC119: 0.035359) [&95%={0.0167274, 0.0664099}]: 0.004622) [&95%={0.0196585, 0.0736559}]: 0.004415) [&95%={0.0222623, 0.0810452}]: 0.762644) [&95%={0.567846, 1.08421}]: 0.877464, (Nym_cha_IU2007327: 1.475556, (Pen_sp_PYC057: 0.530843, ((Pen_ant_IU2007336: 0.010262, Pen_sp_PYC112: 0.010262) [&95%={0.0028359, 0.0229821}]: 0.490567, (Pen_ant_PYC058: 0.243692, (Pen_ant_PYC111: 0.017850, Pen_cfant_PYC113: 0.017850) [&95%={0.0073024, 0.034709}]: 0.225843) [&95%={0.1535, 0.365163}]: 0.257136) [&95%={0.337406, 0.702592}]: 0.030015) [&95%={0.35542, 0.747942}]: 0.944713) [&95%={1.20017, 1.7719}]: 0.208948) [&95%={1.39503, 1.98996}]: 0.199421) [&95%={1.57685, 2.20262}]: 0.148259) [&95%={1.71065, 2.36179}]: 0.117534) [&95%={1.81483, 2.48991}]: 0.166954) [&95%={1.9663, 2.66726}]: 0.072546) [&95%={2.0309, 2.74522}]: 0.132777) [&95%={2.15081, 2.88687}]: 0.129400) [&95%={2.27003, 3.0239}]: 0.087207) [&95%={2.35159, 3.11577}]: 0.228670) [&95%={2.56804, 3.34815}]: 1.064283, ((Pan_arm_PYC002: 2.830106, (Aus_lon_PYC100: 1.814156, Aus_gor_PYC001: 1.814156) [&95%={1.16375, 2.48057}]: 1.015949) [&95%={2.22657, 3.36895}]: 1.087803, (((Rhy_mon_PYC072: 2.911675, ((Pyc_sp_IU2007296: 1.172315, (Pen_cfbou_IU2007330: 0.574554, Pen_sp_PYC069: 0.574554) [&95%={0.359312, 0.857586}]: 0.597761) [&95%={0.822727, 1.57067}]: 0.776546, ((Pyc_gai_IU2007126: 0.225848, Pyc_sp_IU2007326: 0.225848) [&95%={0.119438, 0.386544}]: 1.356616, (Pyc_lit_PYC097: 1.234518, ((Pyc_sp_IU2011623: 0.591445, (Pyc_IU2011618: 0.416707, Pyc_afr_IU2011104: 0.416707) [&95%={0.280108, 0.594169}]: 0.174738) [&95%={0.409283, 0.818907}]: 0.346196, (Pyc_mad_IU2011717: 0.798645, (Pyc_sta_IU20166863: 0.677067, (Pen_gea_IU20164187: 0.511957, Pyc_ces_IU201610338: 0.511957) [&95%={0.35816, 0.703699}]: 0.165110) [&95%={0.481712, 0.91488}]: 0.121579) [&95%={0.573831, 1.06827}]: 0.138996) [&95%={0.680809, 1.24}]: 0.296877) [&95%={0.914967, 1.59646}]: 0.347946) [&95%={1.21154, 1.98091}]: 0.366397) [&95%={1.53895, 2.36822}]: 0.962813) [&95%={2.45925, 3.3365}]: 0.644111, ((Hed_sp_IU20166868: 2.025236, Rho_fil_IU20161476: 2.025236) [&95%={1.57535, 2.47741}]: 0.786386, ((Col_IU20136603: 1.255866, (Col_cfpip_IU20161465: 0.992393, Col_pip_IU200820509: 0.992393) [&95%={0.706507, 1.32862}]: 0.263473) [&95%={0.925444, 1.62671}]: 0.664312, (((Col_arc_PYC026: 1.048016, (Col_mac_IU20113664: 0.162039, Col_sp_IU20161412: 0.162039) [&95%={0.093832, 0.263036}]: 0.885977) [&95%={0.778792, 1.36095}]: 0.163534, ((Col_col_IU200820591: 0.417125, Col_col_IU200820598: 0.417125) [&95%={0.27304, 0.606979}]: 0.593299, ((Col_mac_IU200820494: 0.437049, Col_min_IU200820602: 0.437049) [&95%={0.299492, 0.613341}]: 0.368436, (Col_mac_IU20111642: 0.453323, (Col_mac_IU200820504: 0.303744, (Col_cfmac_IU20161473: 0.009298, Col_lep_IU200820651: 0.009298) [&95%={0.0037642, 0.0180873}]: 0.294446) [&95%={0.205501, 0.434163}]: 0.149578) [&95%={0.314725, 0.630306}]: 0.352163) [&95%={0.589518, 1.06426}]: 0.204938) [&95%={0.753425, 1.30853}]: 0.201126) [&95%={0.920689, 1.5429}]: 0.516453, (Col_hoe_PYC028: 1.486600, ((Col_aus_PYC122: 0.030462, Col_sp_PYC123: 0.030462) [&95%={0.0121206, 0.0621903}]: 1.189224, ((Col_cfgla_PYC098: 0.160646, Col_gla_PYC101: 0.160646) [&95%={0.0891967, 0.268954}]: 0.839692, ((Col_meg_PYC027: 0.437271, Col_ten_IU2007130: 0.437271) [&95%={0.30092, 0.613601}]: 0.434209, (Col_sp_IU20161419: 0.782055, (Dec_aus_IU2007219: 0.674288, (Col_aus_IU2007172: 0.492879, Col_sp_IU2007212: 0.492879) [&95%={0.349468, 0.673165}]: 0.181409) [&95%={0.490445, 0.899581}]: 0.107767) [&95%={0.574831, 1.03278}]: 0.089425) [&95%={0.645031, 1.14208}]: 0.128858) [&95%={0.747274, 1.29746}]: 0.219347) [&95%={0.928872, 1.55167}]: 0.266914) [&95%={1.15938, 1.84753}]: 0.241402) [&95%={1.37371, 2.10787}]: 0.192175) [&95%={1.54645, 2.31345}]: 0.891444) [&95%={2.41865, 3.19904}]: 0.744164) [&95%={3.18092, 3.89524}]: 0.273201, (((Eur_his_PYC024: 2.339991, (Eur_cli_IU2016824: 1.751646, (Eur_sp_IU20121248: 1.401155, (Eur_rap_IU2016818: 0.558065, Eur_sp_IU2016819: 0.558065) [&95%={0.351395, 0.828912}]: 0.843090) [&95%={1.0117, 1.82344}]: 0.350491) [&95%={1.30535, 2.20312}]: 0.588344) [&95%={1.84942, 2.79103}]: 1.093264, ((Asc_set_IU20166864: 2.898529, (Bat_sp_IU20166865: 2.599171, (Asc_qua_IU200820493: 2.224590, Asc_sp_IU20136582: 2.224590) [&95%={1.80143, 2.64212}]: 0.374581) [&95%={2.19653, 2.98908}]: 0.299359) [&95%={2.50831, 3.2695}]: 0.347090, (Nym_tap_PYC079: 3.021750, ((Asc_cas_IU20148275: 1.883326, Asc_cas_IU2016883: 1.883326) [&95%={1.45913, 2.30474}]: 0.720655, (Asc_aby_PYC021: 2.444630, (Asc_lat_IU2016816: 1.631900, Asc_sp_IU2011748: 1.631900) [&95%={1.22338, 2.04794}]: 0.812730) [&95%={2.04859, 2.82809}]: 0.159350) [&95%={2.2173, 2.97557}]: 0.417770) [&95%={2.63357, 3.38555}]: 0.223869) [&95%={2.87189, 3.59094}]: 0.187635) [&95%={3.06157, 3.7731}]: 0.204686, ((((End_sp_IU20161416: 1.427069, (End_aus_IU2007207: 0.207996, End_aus_PYC125: 0.207996) [&95%={0.113613, 0.351624}]: 1.219073) [&95%={1.04018, 1.83736}]: 0.685706, ((End_affmer_IU20161142: 0.976892, End_sp_IU2016863: 0.976892) [&95%={0.687569, 1.30928}]: 0.554665, (End_mol_PYC104: 1.351582, (End_fla_IU2016840: 0.651566, End_sp_IU201318638: 0.651566) [&95%={0.432264, 0.922792}]: 0.700016) [&95%={1.00262, 1.72419}]: 0.179975) [&95%={1.15421, 1.92346}]: 0.581218) [&95%={1.68075, 2.5225}]: 1.033113, ((Pho_IU20136592: 1.592734, Pho_fem_PYC068: 1.592734) [&95%={1.15102, 2.02894}]: 1.071008, ((Ano_pec_IU2016806: 1.247689, Ano_sp_IU2011699: 1.247689) [&95%={0.892037, 1.6254}]: 1.017460, (Ano_sp_IU20161410: 2.041178, ((Ano_gla_IU2016877: 1.134060, (Ano_mic_IU2016804: 0.669015, Pho_IU20136598: 0.669015) [&95%={0.472492, 0.90811}]: 0.465046) [&95%={0.864671, 1.43388}]: 0.498466, ((Ano_cfcal_IU2016811: 0.868739, Ano_gan_IU2016854: 0.868739) [&95%={0.643866, 1.1285}]: 0.450405, ((Ano_dig_IU2016876: 0.470033, Ano_sp_IU201212791266: 0.470033) [&95%={0.315161, 0.664764}]: 0.717618, ((Ano_mas_IU20161124: 0.420525, Ano_sp_IU201318611: 0.420525) [&95%={0.287077, 0.588257}]: 0.600246, (Ano_pet_PYC067: 0.904759, (Ano_ins_IU2016808: 0.340030, Pho_IU201318544: 0.340030) [&95%={0.230041, 0.48062}]: 0.564728) [&95%={0.690595, 1.14974}]: 0.116012) [&95%={0.788531, 1.2816}]: 0.166881) [&95%={0.928802, 1.4726}]: 0.131493) [&95%={1.04114, 1.62109}]: 0.313382) [&95%={1.31921, 1.96293}]: 0.408652) [&95%={1.70321, 2.38567}]: 0.223970) [&95%={1.91515, 2.61579}]: 0.398594) [&95%={2.30636, 3.01117}]: 0.482145) [&95%={2.78789, 3.48171}]: 0.165775, (((Bat_sp_IU20161417: 1.728971, Pal_IU20092: 1.728971) [&95%={1.35852, 2.10881}]: 0.519951, ((Pal_cro_IU2011693: 1.852422, (Pal_sp_IU20161471: 1.561428, (Pal_cfvir_IU20166879: 1.333240, (Pal_ang_IU20166873: 0.587647, Pal_pat_IU200820510: 0.587647) [&95%={0.384522, 0.840292}]: 0.745593) [&95%={1.03781, 1.65533}]: 0.228188) [&95%={1.24518, 1.89603}]: 0.290994) [&95%={1.51522, 2.19791}]: 0.254294, (((Pal_cfhod_PYC121: 0.971879, Pal_sp_PYC010: 0.971879) [&95%={0.704569, 1.27361}]: 0.594728, (Bat_sp_IU20161469: 0.348765, (Bat_mol_IU200820672: 0.284051, Pal_IU20136558: 0.284051) [&95%={0.172649, 0.435216}]: 0.064713) [&95%={0.211719, 0.5325}]: 1.217842) [&95%={1.25829, 1.89486}]: 0.250336, (Pal_pil_IU2007310: 1.466858, ((Pal_can_IU2016814: 0.708731, Pal_sch_IU2016813: 0.708731) [&95%={0.512061, 0.942629}]: 0.516354, (Pal_sp_PYC059: 0.595101, (Pal_cfpat_PYC061: 0.486576, (Pal_cfhie_PYC062: 0.115578, Pal_pat_IU2007134: 0.115578) [&95%={0.0709975, 0.179149}]: 0.370998) [&95%={0.335281, 0.675197}]: 0.108525) [&95%={0.416242, 0.812249}]: 0.629983) [&95%={0.957329, 1.52043}]: 0.241773) [&95%={1.17105, 1.78354}]: 0.350085) [&95%={1.48655, 2.15623}]: 0.289774) [&95%={1.75377, 2.45883}]: 0.142206) [&95%={1.88577, 2.60642}]: 0.840249, (((Ach_gra_IU2016851888: 1.500082, Ach_saw_IU20168841073: 1.500082) [&95%={1.09413, 1.90674}]: 1.064003, ((Tan_orb_IU2016872: 1.072548, (Tan_orb_GNBK: 0.044028, Tan_orb_PYC019: 0.044028) [&95%={0.0211334, 0.0819936}]: 1.028520) [&95%={0.747732, 1.42661}]: 1.070795, (Tan_tay_IU2016858: 1.815794, (Tan_cal_PYC018: 1.556610, (Tan_ing_IU2016867: 1.181867, (Tan_acu_IU2016856: 0.964757, (Tan_bou_IU20161074: 0.342011, Tan_hum_IU2016868: 0.342011) [&95%={0.227238, 0.493381}]: 0.622746) [&95%={0.72896, 1.23342}]: 0.217110) [&95%={0.916421, 1.47451}]: 0.374743) [&95%={1.25771, 1.87377}]: 0.259183) [&95%={1.50199, 2.1408}]: 0.327549) [&95%={1.81802, 2.47215}]: 0.420742) [&95%={2.23259, 2.89096}]: 0.289649, ((((Amm_dir_IU2016833: 2.015559, Amm_spi_IU2016826: 2.015559) [&95%={1.68525, 2.34812}]: 0.360551, (Amm_exo_IU2016829: 2.091134, (Nym_mus_IU201318640: 1.878893, (Nym_cur_IU2011760: 1.527116, Nym_duo_IU2016812: 1.527116) [&95%={1.21843, 1.85376}]: 0.351777) [&95%={1.56669, 2.20087}]: 0.212241) [&95%={1.77627, 2.4104}]: 0.284976) [&95%={2.057, 2.69382}]: 0.258332, (Amm_IU20161393: 2.408788, (Ach_sp_IU201318597: 1.990901, (Ach_tra_PYC008: 1.775038, (Ach_spi_PYC108: 1.085102, ((Amm_PYC004: 0.358464, Aus_juv_PYC115: 0.358464) [&95%={0.236975, 0.517978}]: 0.356986, (Aus_pol_PYC114: 0.531081, Aus_pra_PYC127: 0.531081) [&95%={0.339202, 0.763132}]: 0.184370) [&95%={0.512721, 0.95599}]: 0.369651) [&95%={0.818053, 1.38382}]: 0.689937) [&95%={1.46852, 2.09463}]: 0.215862) [&95%={1.67828, 2.31106}]: 0.417887) [&95%={2.08663, 2.72863}]: 0.225653) [&95%={2.30604, 2.95528}]: 0.114170, (((Cil_sca_IU20166862: 1.489259, Cil_sew_IU2011624: 1.489259) [&95%={1.16254, 1.83227}]: 0.571505, (Ser_sp_PYC118: 1.298106, (Ser_het_IU201315606: 0.486421, Ser_sp_IU201319239: 0.486421) [&95%={0.306072, 0.719274}]: 0.811686) [&95%={0.976649, 1.63801}]: 0.762658) [&95%={1.73801, 2.38746}]: 0.385026, ((Amm_hil_GNBK: 1.225807, (Ach_sp_IU2011659: 0.015564, Ach_sp_IU2011764: 0.015564) [&95%={0.0054195, 0.0333589}]: 1.210243) [&95%={0.925356, 1.5553}]: 0.500975, (Amm_PYC005: 1.372180, ((Amm_adu_IU2007231: 0.525864, Amm_adu_PYC099: 0.525864) [&95%={0.36161, 0.731594}]: 0.349705, (Amm_gig_IU20161421: 0.779199, (Amm_cftib_IU2007247: 0.642267, ((Amm_gla_PYC013: 0.110130, (Amm_sp_PYC015: 0.003131, Amm_sp_PYC107: 0.003131) [&95%={0.0002007, 0.0097968}]: 0.106999) [&95%={0.0615594, 0.180807}]: 0.429133, (Amm_sp_IU2007324: 0.352108, (Amm_sp_PYC009: 0.004319, (Amm_sp_PYC011: 0.002193, Amm_sp_PYC020: 0.002193) [&95%={0.0002483, 0.0060044}]: 0.002126) [&95%={0.0008266, 0.0114384}]: 0.347789) [&95%={0.240723, 0.494937}]: 0.187155) [&95%={0.380142, 0.734087}]: 0.103005) [&95%={0.459444, 0.862299}]: 0.136932) [&95%={0.565348, 1.03129}]: 0.096369) [&95%={0.642374, 1.14605}]: 0.496612) [&95%={1.07274, 1.69311}]: 0.354601) [&95%={1.40218, 2.05995}]: 0.719009) [&95%={2.12178, 2.76644}]: 0.302821) [&95%={2.41354, 3.07359}]: 0.105122) [&95%={2.51202, 3.18179}]: 0.235438) [&95%={2.73588, 3.42205}]: 0.222490) [&95%={2.9487, 3.64723}]: 0.326278) [&95%={3.26934, 3.96796}]: 0.191047) [&95%={3.45967, 4.1542}]: 0.088922) [&95%={3.54875, 4.24075}]: 0.113648) [&95%={3.66498, 4.34829}]: 1.222475) [&95%={5.10301, 5.38927}]: 0.081595) [&95%={5.15852, 5.54316}];
+
+
+Posterior mean (95% Equal-tail CI) (95% HPD CI) HPD-CI-width
+
+t_n219         5.3356 (5.1585, 5.5432) (5.1402, 5.5089) 0.3687 (Jnode 434)
+t_n220         5.1912 (4.9066, 5.4894) (4.9085, 5.4912) 0.5827 (Jnode 433)
+t_n221         4.7987 (4.3666, 5.1662) (4.4004, 5.1912) 0.7908 (Jnode 432)
+t_n222         3.8700 (2.9402, 4.4841) (3.0413, 4.5433) 1.5020 (Jnode 431)
+t_n223         3.8224 (2.9856, 4.4715) (3.0732, 4.5330) 1.4598 (Jnode 430)
+t_n224         3.0771 (2.2759, 3.8841) (2.2966, 3.9013) 1.6047 (Jnode 429)
+t_n225         2.9437 (2.1472, 3.7731) (2.1776, 3.7997) 1.6220 (Jnode 428)
+t_n226         5.2540 (5.1030, 5.3893) (5.1063, 5.3918) 0.2855 (Jnode 427)
+t_n227         4.7731 (4.4166, 5.0315) (4.4696, 5.0612) 0.5916 (Jnode 426)
+t_n228         4.1868 (3.6205, 4.5900) (3.6958, 4.6317) 0.9359 (Jnode 425)
+t_n229         1.5523 (0.8320, 2.3518) (0.8096, 2.3232) 1.5136 (Jnode 424)
+t_n230         4.5710 (4.1486, 4.8704) (4.2118, 4.9063) 0.6945 (Jnode 423)
+t_n231         2.6034 (1.7155, 3.4237) (1.7326, 3.4374) 1.7049 (Jnode 422)
+t_n232         4.1024 (3.4931, 4.5019) (3.5867, 4.5564) 0.9697 (Jnode 421)
+t_n233         3.6308 (2.9375, 4.1117) (3.0139, 4.1649) 1.1510 (Jnode 420)
+t_n234         2.1916 (1.4728, 2.8326) (1.4955, 2.8528) 1.3573 (Jnode 419)
+t_n235         3.6234 (2.9412, 4.0978) (3.0204, 4.1495) 1.1292 (Jnode 418)
+t_n236         1.7708 (1.0910, 2.4601) (1.0798, 2.4477) 1.3680 (Jnode 417)
+t_n237         1.9034 (1.2259, 2.5593) (1.2187, 2.5514) 1.3328 (Jnode 416)
+t_n238         1.3399 (0.8204, 1.9199) (0.8042, 1.8989) 1.0947 (Jnode 415)
+t_n239         4.0316 (3.6650, 4.3483) (3.6834, 4.3624) 0.6790 (Jnode 414)
+t_n240         2.9673 (2.5680, 3.3482) (2.5703, 3.3501) 0.7798 (Jnode 413)
+t_n241         2.3493 (1.8609, 2.8097) (1.8740, 2.8211) 0.9471 (Jnode 412)
+t_n242         1.9450 (1.4969, 2.3976) (1.4963, 2.3968) 0.9005 (Jnode 411)
+t_n243         2.7386 (2.3516, 3.1158) (2.3547, 3.1185) 0.7637 (Jnode 410)
+t_n244         2.6514 (2.2700, 3.0239) (2.2762, 3.0297) 0.7535 (Jnode 409)
+t_n245         2.5220 (2.1508, 2.8869) (2.1551, 2.8909) 0.7359 (Jnode 408)
+t_n246         2.3450 (1.9699, 2.7201) (1.9693, 2.7193) 0.7500 (Jnode 407)
+t_n247         1.2715 (0.8884, 1.6789) (0.8838, 1.6734) 0.7896 (Jnode 406)
+t_n248         2.3892 (2.0309, 2.7452) (2.0296, 2.7438) 0.7142 (Jnode 405)
+t_n249         1.7575 (1.4242, 2.1045) (1.4158, 2.0960) 0.6802 (Jnode 404)
+t_n250         0.8766 (0.6233, 1.1694) (0.6103, 1.1535) 0.5432 (Jnode 403)
+t_n251         0.7166 (0.5017, 0.9720) (0.4871, 0.9541) 0.4670 (Jnode 402)
+t_n252         0.1770 (0.1098, 0.2727) (0.1029, 0.2611) 0.1582 (Jnode 401)
+t_n253         0.3417 (0.2268, 0.4924) (0.2170, 0.4780) 0.2610 (Jnode 400)
+t_n254         2.3167 (1.9663, 2.6673) (1.9666, 2.6675) 0.7009 (Jnode 399)
+t_n255         1.8826 (1.5577, 2.2187) (1.5518, 2.2127) 0.6608 (Jnode 398)
+t_n256         1.5651 (1.2510, 1.8993) (1.2437, 1.8912) 0.6475 (Jnode 397)
+t_n257         0.7415 (0.4992, 1.0286) (0.4858, 1.0114) 0.5256 (Jnode 396)
+t_n258         0.3077 (0.1795, 0.4835) (0.1642, 0.4611) 0.2969 (Jnode 395)
+t_n259         1.2098 (0.9126, 1.5349) (0.9007, 1.5210) 0.6203 (Jnode 394)
+t_n260         0.9225 (0.6756, 1.2051) (0.6643, 1.1913) 0.5270 (Jnode 393)
+t_n261         0.7058 (0.4988, 0.9534) (0.4828, 0.9337) 0.4509 (Jnode 392)
+t_n262         2.1497 (1.8148, 2.4899) (1.8152, 2.4902) 0.6750 (Jnode 391)
+t_n263         2.0322 (1.7106, 2.3618) (1.7094, 2.3601) 0.6507 (Jnode 390)
+t_n264         1.7891 (1.4888, 2.1043) (1.4830, 2.0976) 0.6145 (Jnode 389)
+t_n265         1.5571 (1.2708, 1.8633) (1.2634, 1.8548) 0.5914 (Jnode 388)
+t_n266         1.6076 (1.3263, 1.9083) (1.3198, 1.9007) 0.5809 (Jnode 387)
+t_n267         1.3665 (1.1082, 1.6466) (1.0988, 1.6357) 0.5369 (Jnode 386)
+t_n268         1.1826 (0.9432, 1.4460) (0.9365, 1.4384) 0.5019 (Jnode 385)
+t_n269         0.9910 (0.7697, 1.2411) (0.7621, 1.2317) 0.4697 (Jnode 384)
+t_n270         0.0275 (0.0123, 0.0521) (0.0103, 0.0480) 0.0377 (Jnode 383)
+t_n271         1.8839 (1.5769, 2.2026) (1.5705, 2.1959) 0.6254 (Jnode 382)
+t_n272         1.0155 (0.7486, 1.3117) (0.7377, 1.2990) 0.5612 (Jnode 381)
+t_n273         0.8148 (0.5844, 1.0821) (0.5751, 1.0700) 0.4949 (Jnode 380)
+t_n274         0.5484 (0.3808, 0.7547) (0.3685, 0.7385) 0.3700 (Jnode 379)
+t_n275         0.3946 (0.2673, 0.5559) (0.2585, 0.5433) 0.2848 (Jnode 378)
+t_n276         0.1388 (0.0824, 0.2185) (0.0762, 0.2085) 0.1323 (Jnode 377)
+t_n277         1.6845 (1.3950, 1.9900) (1.3894, 1.9836) 0.5942 (Jnode 376)
+t_n278         0.8070 (0.5678, 1.0842) (0.5600, 1.0733) 0.5133 (Jnode 375)
+t_n279         0.3802 (0.2422, 0.5620) (0.2305, 0.5443) 0.3138 (Jnode 374)
+t_n280         0.0444 (0.0223, 0.0810) (0.0191, 0.0747) 0.0556 (Jnode 373)
+t_n281         0.0400 (0.0197, 0.0737) (0.0166, 0.0676) 0.0510 (Jnode 372)
+t_n282         0.0354 (0.0167, 0.0664) (0.0141, 0.0610) 0.0468 (Jnode 371)
+t_n283         1.4756 (1.2002, 1.7719) (1.1907, 1.7612) 0.5704 (Jnode 370)
+t_n284         0.5308 (0.3554, 0.7479) (0.3430, 0.7311) 0.3881 (Jnode 369)
+t_n285         0.5008 (0.3374, 0.7026) (0.3244, 0.6862) 0.3618 (Jnode 368)
+t_n286         0.0103 (0.0028, 0.0230) (0.0018, 0.0207) 0.0189 (Jnode 367)
+t_n287         0.2437 (0.1535, 0.3652) (0.1443, 0.3517) 0.2074 (Jnode 366)
+t_n288         0.0178 (0.0073, 0.0347) (0.0060, 0.0320) 0.0260 (Jnode 365)
+t_n289         3.9179 (3.5488, 4.2408) (3.5693, 4.2576) 0.6883 (Jnode 364)
+t_n290         2.8301 (2.2266, 3.3689) (2.2506, 3.3896) 1.1390 (Jnode 363)
+t_n291         1.8142 (1.1638, 2.4806) (1.1623, 2.4787) 1.3165 (Jnode 362)
+t_n292         3.8290 (3.4597, 4.1542) (3.4774, 4.1691) 0.6916 (Jnode 361)
+t_n293         3.5558 (3.1809, 3.8952) (3.1924, 3.9048) 0.7124 (Jnode 360)
+t_n294         2.9117 (2.4593, 3.3365) (2.4663, 3.3425) 0.8762 (Jnode 359)
+t_n295         1.9489 (1.5390, 2.3682) (1.5368, 2.3655) 0.8288 (Jnode 358)
+t_n296         1.1723 (0.8227, 1.5707) (0.8101, 1.5548) 0.7447 (Jnode 357)
+t_n297         0.5746 (0.3593, 0.8576) (0.3379, 0.8273) 0.4894 (Jnode 356)
+t_n298         1.5825 (1.2115, 1.9809) (1.2063, 1.9745) 0.7683 (Jnode 355)
+t_n299         0.2258 (0.1194, 0.3865) (0.1060, 0.3627) 0.2567 (Jnode 354)
+t_n300         1.2345 (0.9150, 1.5965) (0.8998, 1.5776) 0.6779 (Jnode 353)
+t_n301         0.9376 (0.6808, 1.2400) (0.6652, 1.2200) 0.5548 (Jnode 352)
+t_n302         0.5914 (0.4093, 0.8189) (0.3947, 0.7994) 0.4047 (Jnode 351)
+t_n303         0.4167 (0.2801, 0.5942) (0.2695, 0.5786) 0.3091 (Jnode 350)
+t_n304         0.7986 (0.5738, 1.0683) (0.5600, 1.0504) 0.4904 (Jnode 349)
+t_n305         0.6771 (0.4817, 0.9149) (0.4731, 0.9028) 0.4297 (Jnode 348)
+t_n306         0.5120 (0.3582, 0.7037) (0.3459, 0.6872) 0.3414 (Jnode 347)
+t_n307         2.8116 (2.4186, 3.1990) (2.4172, 3.1972) 0.7800 (Jnode 346)
+t_n308         2.0252 (1.5754, 2.4774) (1.5729, 2.4748) 0.9019 (Jnode 345)
+t_n309         1.9202 (1.5465, 2.3134) (1.5392, 2.3052) 0.7660 (Jnode 344)
+t_n310         1.2559 (0.9254, 1.6267) (0.9119, 1.6107) 0.6988 (Jnode 343)
+t_n311         0.9924 (0.7065, 1.3286) (0.6881, 1.3068) 0.6186 (Jnode 342)
+t_n312         1.7280 (1.3737, 2.1079) (1.3645, 2.0980) 0.7336 (Jnode 341)
+t_n313         1.2115 (0.9207, 1.5429) (0.9059, 1.5251) 0.6192 (Jnode 340)
+t_n314         1.0480 (0.7788, 1.3610) (0.7657, 1.3440) 0.5784 (Jnode 339)
+t_n315         0.1620 (0.0938, 0.2630) (0.0863, 0.2497) 0.1634 (Jnode 338)
+t_n316         1.0104 (0.7534, 1.3085) (0.7413, 1.2931) 0.5518 (Jnode 337)
+t_n317         0.4171 (0.2730, 0.6070) (0.2630, 0.5911) 0.3281 (Jnode 336)
+t_n318         0.8055 (0.5895, 1.0643) (0.5768, 1.0478) 0.4710 (Jnode 335)
+t_n319         0.4370 (0.2995, 0.6133) (0.2886, 0.5977) 0.3091 (Jnode 334)
+t_n320         0.4533 (0.3147, 0.6303) (0.3036, 0.6150) 0.3114 (Jnode 333)
+t_n321         0.3037 (0.2055, 0.4342) (0.1973, 0.4213) 0.2240 (Jnode 332)
+t_n322         0.0093 (0.0038, 0.0181) (0.0031, 0.0167) 0.0136 (Jnode 331)
+t_n323         1.4866 (1.1594, 1.8475) (1.1511, 1.8377) 0.6867 (Jnode 330)
+t_n324         1.2197 (0.9289, 1.5517) (0.9190, 1.5391) 0.6201 (Jnode 329)
+t_n325         0.0305 (0.0121, 0.0622) (0.0096, 0.0565) 0.0469 (Jnode 328)
+t_n326         1.0003 (0.7473, 1.2975) (0.7378, 1.2843) 0.5465 (Jnode 327)
+t_n327         0.1606 (0.0892, 0.2690) (0.0802, 0.2532) 0.1729 (Jnode 326)
+t_n328         0.8715 (0.6450, 1.1421) (0.6330, 1.1264) 0.4934 (Jnode 325)
+t_n329         0.4373 (0.3009, 0.6136) (0.2910, 0.5985) 0.3076 (Jnode 324)
+t_n330         0.7821 (0.5748, 1.0328) (0.5628, 1.0168) 0.4540 (Jnode 323)
+t_n331         0.6743 (0.4904, 0.8996) (0.4768, 0.8820) 0.4052 (Jnode 322)
+t_n332         0.4929 (0.3495, 0.6732) (0.3390, 0.6580) 0.3190 (Jnode 321)
+t_n333         3.6379 (3.2693, 3.9680) (3.2848, 3.9807) 0.6959 (Jnode 320)
+t_n334         3.4333 (3.0616, 3.7731) (3.0736, 3.7835) 0.7099 (Jnode 319)
+t_n335         2.3400 (1.8494, 2.7910) (1.8639, 2.8038) 0.9399 (Jnode 318)
+t_n336         1.7516 (1.3054, 2.2031) (1.2980, 2.1952) 0.8973 (Jnode 317)
+t_n337         1.4012 (1.0117, 1.8234) (0.9978, 1.8074) 0.8096 (Jnode 316)
+t_n338         0.5581 (0.3514, 0.8289) (0.3344, 0.8036) 0.4692 (Jnode 315)
+t_n339         3.2456 (2.8719, 3.5909) (2.8851, 3.6033) 0.7182 (Jnode 314)
+t_n340         2.8985 (2.5083, 3.2695) (2.5153, 3.2763) 0.7610 (Jnode 313)
+t_n341         2.5992 (2.1965, 2.9891) (2.2036, 2.9955) 0.7919 (Jnode 312)
+t_n342         2.2246 (1.8014, 2.6421) (1.8022, 2.6428) 0.8406 (Jnode 311)
+t_n343         3.0218 (2.6336, 3.3856) (2.6441, 3.3949) 0.7508 (Jnode 310)
+t_n344         2.6040 (2.2173, 2.9756) (2.2262, 2.9832) 0.7570 (Jnode 309)
+t_n345         1.8833 (1.4591, 2.3047) (1.4550, 2.2999) 0.8448 (Jnode 308)
+t_n346         2.4446 (2.0486, 2.8281) (2.0537, 2.8329) 0.7792 (Jnode 307)
+t_n347         1.6319 (1.2234, 2.0479) (1.2190, 2.0430) 0.8240 (Jnode 306)
+t_n348         3.3117 (2.9487, 3.6472) (2.9580, 3.6554) 0.6974 (Jnode 305)
+t_n349         3.1459 (2.7879, 3.4817) (2.7970, 3.4898) 0.6928 (Jnode 304)
+t_n350         2.1128 (1.6807, 2.5225) (1.6850, 2.5257) 0.8407 (Jnode 303)
+t_n351         1.4271 (1.0402, 1.8374) (1.0354, 1.8311) 0.7957 (Jnode 302)
+t_n352         0.2080 (0.1136, 0.3516) (0.1018, 0.3299) 0.2282 (Jnode 301)
+t_n353         1.5316 (1.1542, 1.9235) (1.1509, 1.9200) 0.7691 (Jnode 300)
+t_n354         0.9769 (0.6876, 1.3093) (0.6713, 1.2899) 0.6186 (Jnode 299)
+t_n355         1.3516 (1.0026, 1.7242) (0.9935, 1.7142) 0.7208 (Jnode 298)
+t_n356         0.6516 (0.4323, 0.9228) (0.4152, 0.9009) 0.4857 (Jnode 297)
+t_n357         2.6637 (2.3064, 3.0112) (2.3060, 3.0108) 0.7047 (Jnode 296)
+t_n358         1.5927 (1.1510, 2.0289) (1.1556, 2.0331) 0.8775 (Jnode 295)
+t_n359         2.2651 (1.9152, 2.6158) (1.9106, 2.6109) 0.7002 (Jnode 294)
+t_n360         1.2477 (0.8920, 1.6254) (0.8859, 1.6186) 0.7327 (Jnode 293)
+t_n361         2.0412 (1.7032, 2.3857) (1.7002, 2.3823) 0.6821 (Jnode 292)
+t_n362         1.6325 (1.3192, 1.9629) (1.3132, 1.9560) 0.6428 (Jnode 291)
+t_n363         1.1341 (0.8647, 1.4339) (0.8554, 1.4224) 0.5671 (Jnode 290)
+t_n364         0.6690 (0.4725, 0.9081) (0.4602, 0.8918) 0.4316 (Jnode 289)
+t_n365         1.3191 (1.0411, 1.6211) (1.0338, 1.6125) 0.5786 (Jnode 288)
+t_n366         0.8687 (0.6439, 1.1285) (0.6331, 1.1156) 0.4825 (Jnode 287)
+t_n367         1.1877 (0.9288, 1.4726) (0.9208, 1.4630) 0.5422 (Jnode 286)
+t_n368         0.4700 (0.3152, 0.6648) (0.3035, 0.6483) 0.3448 (Jnode 285)
+t_n369         1.0208 (0.7885, 1.2816) (0.7816, 1.2728) 0.4912 (Jnode 284)
+t_n370         0.4205 (0.2871, 0.5883) (0.2768, 0.5741) 0.2974 (Jnode 283)
+t_n371         0.9048 (0.6906, 1.1497) (0.6809, 1.1377) 0.4569 (Jnode 282)
+t_n372         0.3400 (0.2300, 0.4806) (0.2216, 0.4683) 0.2467 (Jnode 281)
+t_n373         3.0892 (2.7359, 3.4220) (2.7419, 3.4275) 0.6856 (Jnode 280)
+t_n374         2.2489 (1.8858, 2.6064) (1.8876, 2.6080) 0.7204 (Jnode 279)
+t_n375         1.7290 (1.3585, 2.1088) (1.3502, 2.1002) 0.7500 (Jnode 278)
+t_n376         2.1067 (1.7538, 2.4588) (1.7574, 2.4620) 0.7046 (Jnode 277)
+t_n377         1.8524 (1.5152, 2.1979) (1.5124, 2.1947) 0.6823 (Jnode 276)
+t_n378         1.5614 (1.2452, 1.8960) (1.2412, 1.8916) 0.6504 (Jnode 275)
+t_n379         1.3332 (1.0378, 1.6553) (1.0275, 1.6438) 0.6163 (Jnode 274)
+t_n380         0.5876 (0.3845, 0.8403) (0.3688, 0.8196) 0.4508 (Jnode 273)
+t_n381         1.8169 (1.4865, 2.1562) (1.4848, 2.1541) 0.6693 (Jnode 272)
+t_n382         1.5666 (1.2583, 1.8949) (1.2493, 1.8851) 0.6358 (Jnode 271)
+t_n383         0.9719 (0.7046, 1.2736) (0.6935, 1.2603) 0.5668 (Jnode 270)
+t_n384         0.3488 (0.2117, 0.5325) (0.1988, 0.5134) 0.3146 (Jnode 269)
+t_n385         0.2841 (0.1726, 0.4352) (0.1625, 0.4198) 0.2572 (Jnode 268)
+t_n386         1.4669 (1.1710, 1.7835) (1.1656, 1.7771) 0.6116 (Jnode 267)
+t_n387         1.2251 (0.9573, 1.5204) (0.9497, 1.5113) 0.5616 (Jnode 266)
+t_n388         0.7087 (0.5121, 0.9426) (0.5001, 0.9272) 0.4272 (Jnode 265)
+t_n389         0.5951 (0.4162, 0.8122) (0.4055, 0.7983) 0.3928 (Jnode 264)
+t_n390         0.4866 (0.3353, 0.6752) (0.3247, 0.6612) 0.3366 (Jnode 263)
+t_n391         0.1156 (0.0710, 0.1791) (0.0658, 0.1708) 0.1051 (Jnode 262)
+t_n392         2.8537 (2.5120, 3.1818) (2.5165, 3.1858) 0.6693 (Jnode 261)
+t_n393         2.5641 (2.2326, 2.8910) (2.2349, 2.8931) 0.6582 (Jnode 260)
+t_n394         1.5001 (1.0941, 1.9067) (1.0934, 1.9057) 0.8123 (Jnode 259)
+t_n395         2.1433 (1.8180, 2.4722) (1.8190, 2.4729) 0.6539 (Jnode 258)
+t_n396         1.0725 (0.7477, 1.4266) (0.7350, 1.4124) 0.6774 (Jnode 257)
+t_n397         0.0440 (0.0211, 0.0820) (0.0182, 0.0757) 0.0575 (Jnode 256)
+t_n398         1.8158 (1.5020, 2.1408) (1.5011, 2.1397) 0.6386 (Jnode 255)
+t_n399         1.5566 (1.2577, 1.8738) (1.2512, 1.8670) 0.6158 (Jnode 254)
+t_n400         1.1819 (0.9164, 1.4745) (0.9090, 1.4656) 0.5566 (Jnode 253)
+t_n401         0.9648 (0.7290, 1.2334) (0.7166, 1.2182) 0.5016 (Jnode 252)
+t_n402         0.3420 (0.2272, 0.4934) (0.2171, 0.4778) 0.2608 (Jnode 251)
+t_n403         2.7486 (2.4135, 3.0736) (2.4151, 3.0748) 0.6597 (Jnode 250)
+t_n404         2.6344 (2.3060, 2.9553) (2.3073, 2.9564) 0.6491 (Jnode 249)
+t_n405         2.3761 (2.0570, 2.6938) (2.0613, 2.6977) 0.6364 (Jnode 248)
+t_n406         2.0156 (1.6852, 2.3481) (1.6873, 2.3501) 0.6628 (Jnode 247)
+t_n407         2.0911 (1.7763, 2.4104) (1.7731, 2.4070) 0.6338 (Jnode 246)
+t_n408         1.8789 (1.5667, 2.2009) (1.5644, 2.1982) 0.6338 (Jnode 245)
+t_n409         1.5271 (1.2184, 1.8538) (1.2149, 1.8496) 0.6347 (Jnode 244)
+t_n410         2.4088 (2.0866, 2.7286) (2.0842, 2.7260) 0.6418 (Jnode 243)
+t_n411         1.9909 (1.6783, 2.3111) (1.6750, 2.3072) 0.6322 (Jnode 242)
+t_n412         1.7750 (1.4685, 2.0946) (1.4614, 2.0870) 0.6256 (Jnode 241)
+t_n413         1.0851 (0.8181, 1.3838) (0.8107, 1.3748) 0.5642 (Jnode 240)
+t_n414         0.7155 (0.5127, 0.9560) (0.5022, 0.9428) 0.4407 (Jnode 239)
+t_n415         0.3585 (0.2370, 0.5180) (0.2244, 0.5006) 0.2762 (Jnode 238)
+t_n416         0.5311 (0.3392, 0.7631) (0.3273, 0.7479) 0.4206 (Jnode 237)
+t_n417         2.4458 (2.1218, 2.7664) (2.1254, 2.7697) 0.6443 (Jnode 236)
+t_n418         2.0608 (1.7380, 2.3875) (1.7359, 2.3852) 0.6493 (Jnode 235)
+t_n419         1.4893 (1.1625, 1.8323) (1.1528, 1.8222) 0.6693 (Jnode 234)
+t_n420         1.2981 (0.9766, 1.6380) (0.9728, 1.6333) 0.6605 (Jnode 233)
+t_n421         0.4864 (0.3061, 0.7193) (0.2905, 0.6977) 0.4072 (Jnode 232)
+t_n422         1.7268 (1.4022, 2.0600) (1.4019, 2.0596) 0.6576 (Jnode 231)
+t_n423         1.2258 (0.9254, 1.5553) (0.9159, 1.5441) 0.6283 (Jnode 230)
+t_n424         0.0156 (0.0054, 0.0334) (0.0040, 0.0300) 0.0260 (Jnode 229)
+t_n425         1.3722 (1.0727, 1.6931) (1.0644, 1.6837) 0.6193 (Jnode 228)
+t_n426         0.8756 (0.6424, 1.1460) (0.6304, 1.1315) 0.5011 (Jnode 227)
+t_n427         0.5259 (0.3616, 0.7316) (0.3479, 0.7135) 0.3655 (Jnode 226)
+t_n428         0.7792 (0.5653, 1.0313) (0.5540, 1.0167) 0.4627 (Jnode 225)
+t_n429         0.6423 (0.4594, 0.8623) (0.4471, 0.8471) 0.4000 (Jnode 224)
+t_n430         0.5393 (0.3801, 0.7341) (0.3689, 0.7197) 0.3508 (Jnode 223)
+t_n431         0.1101 (0.0616, 0.1808) (0.0558, 0.1712) 0.1155 (Jnode 222)
+t_n432         0.0031 (0.0002, 0.0098) (0.0000, 0.0081) 0.0081 (Jnode 221)
+t_n433         0.3521 (0.2407, 0.4949) (0.2333, 0.4834) 0.2501 (Jnode 220)
+t_n434         0.0043 (0.0008, 0.0114) (0.0003, 0.0097) 0.0094 (Jnode 219)
+t_n435         0.0022 (0.0002, 0.0060) (0.0000, 0.0051) 0.0051 (Jnode 218)
+mu             0.0896 (0.0606, 0.1234) (0.0591, 0.1215) 0.0623
+sigma2         0.1112 (0.0842, 0.1460) (0.0816, 0.1425) 0.0608
+lnL         -282.4318 (-314.4380, -251.9780) (-313.9720, -251.5930) 62.3790

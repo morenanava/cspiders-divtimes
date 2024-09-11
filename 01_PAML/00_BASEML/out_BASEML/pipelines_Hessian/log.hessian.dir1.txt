@@ -1,0 +1,299 @@
+Job starts: Wed Feb 7 09:43:58 GMT 2024
+The analyses will take place in directory /data/scratch/btx126/spiders_dating/Hessian/1
+
+
+Running BASEML to calculate the Hessian and the gradient...
+BASEML in paml version 4.10.7, June 2023
+ns = 218  	ls = 9869
+Reading sequences, sequential format..
+Reading seq # 1: Ach_gra_IU2016851888       Reading seq # 2: Ach_saw_IU20168841073       Reading seq # 3: Ach_sp_IU201318597       Reading seq # 4: Ach_spi_PYC108       Reading seq # 5: Ach_tra_PYC008       Reading seq # 6: Ach_sp_IU2011659       Reading seq # 7: Ach_sp_IU2011764       Reading seq # 8: Amm_adu_IU2007231       Reading seq # 9: Amm_adu_PYC099       Reading seq #10: Amm_cftib_IU2007247       Reading seq #11: Amm_gig_IU20161421       Reading seq #12: Amm_gla_PYC013       Reading seq #13: Amm_hil_GNBK       Reading seq #14: Amm_sp_IU2007324       Reading seq #15: Amm_sp_PYC009       Reading seq #16: Amm_sp_PYC011       Reading seq #17: Amm_sp_PYC015       Reading seq #18: Amm_sp_PYC020       Reading seq #19: Amm_sp_PYC107       Reading seq #20: Amm_IU20161393       Reading seq #21: Amm_PYC004       Reading seq #22: Amm_PYC005       Reading seq #23: Amm_dir_IU2016833       Reading seq #24: Amm_exo_IU2016829       Reading seq #25: Amm_spi_IU2016826       Reading seq #26: Ana_imp_Hexapoda       Reading seq #27: Ano_cfcal_IU2016811       Reading seq #28: Ano_dig_IU2016876       Reading seq #29: Ano_gan_IU2016854       Reading seq #30: Ano_gla_IU2016877       Reading seq #31: Ano_ins_IU2016808       Reading seq #32: Ano_mas_IU20161124       Reading seq #33: Ano_mic_IU2016804       Reading seq #34: Ano_pec_IU2016806       Reading seq #35: Ano_pet_PYC067       Reading seq #36: Ano_sp_IU2011699       Reading seq #37: Ano_sp_IU201212791266       Reading seq #38: Ano_sp_IU201318611       Reading seq #39: Ano_sp_IU20161410       Reading seq #40: Ano_val_PYC043       Reading seq #41: Asc_aby_PYC021       Reading seq #42: Asc_cas_IU20148275       Reading seq #43: Asc_cas_IU2016883       Reading seq #44: Asc_lat_IU2016816       Reading seq #45: Asc_qua_IU200820493       Reading seq #46: Asc_set_IU20166864       Reading seq #47: Asc_sp_IU2011748       Reading seq #48: Asc_sp_IU20136582       Reading seq #49: Aus_gor_PYC001       Reading seq #50: Aus_lon_PYC100       Reading seq #51: Aus_cor_IU2007305       Reading seq #52: Aus_cri_PYC109       Reading seq #53: Aus_sp_PYC030       Reading seq #54: Aus_juv_PYC115       Reading seq #55: Aus_pol_PYC114       Reading seq #56: Aus_pra_PYC127       Reading seq #57: Bat_mol_IU200820672       Reading seq #58: Bat_sp_IU20161417       Reading seq #59: Bat_sp_IU20161469       Reading seq #60: Bat_sp_IU20166865       Reading seq #61: Bor_aby_PYC045       Reading seq #62: Bor_cfoss_PYC046       Reading seq #63: Cal_cfbre_PYC033       Reading seq #64: Cal_mic_PYC034       Reading seq #65: Cal_IU2011625       Reading seq #66: Car_rot_Xiphosura       Reading seq #67: Cil_sca_IU20166862       Reading seq #68: Cil_sew_IU2011624       Reading seq #69: Col_IU20136603       Reading seq #70: Col_arc_PYC026       Reading seq #71: Col_aus_IU2007172       Reading seq #72: Col_aus_PYC122       Reading seq #73: Col_cfgla_PYC098       Reading seq #74: Col_cfmac_IU20161473       Reading seq #75: Col_cfpip_IU20161465       Reading seq #76: Col_col_IU200820591       Reading seq #77: Col_col_IU200820598       Reading seq #78: Col_gla_PYC101       Reading seq #79: Col_hoe_PYC028       Reading seq #80: Col_lep_IU200820651       Reading seq #81: Col_mac_IU200820494       Reading seq #82: Col_mac_IU200820504       Reading seq #83: Col_mac_IU20111642       Reading seq #84: Col_mac_IU20113664       Reading seq #85: Col_meg_PYC027       Reading seq #86: Col_min_IU200820602       Reading seq #87: Col_pip_IU200820509       Reading seq #88: Col_sp_IU2007212       Reading seq #89: Col_sp_IU20161412       Reading seq #90: Col_sp_IU20161419       Reading seq #91: Col_sp_PYC123       Reading seq #92: Col_ten_IU2007130       Reading seq #93: Cry_sp_Ricinulei       Reading seq #94: Dam_dia_Amblypigi       Reading seq #95: Dec_aus_IU2007219       Reading seq #96: End_affmer_IU20161142       Reading seq #97: End_aus_IU2007207       Reading seq #98: End_aus_PYC125       Reading seq #99: End_fla_IU2016840       Reading seq #100: End_mol_PYC104       Reading seq #101: End_sp_IU201318638       Reading seq #102: End_sp_IU20161416       Reading seq #103: End_sp_IU2016863       Reading seq #104: Ere_sp_Solifugae       Reading seq #105: Eur_cli_IU2016824       Reading seq #106: Eur_his_PYC024       Reading seq #107: Eur_rap_IU2016818       Reading seq #108: Eur_sp_IU20121248       Reading seq #109: Eur_sp_IU2016819       Reading seq #110: Hed_sp_IU20166868       Reading seq #111: Hep_sp_Mesothelae       Reading seq #112: Lim_pol_Xiphosura       Reading seq #113: Lip_sp_Mesothelae       Reading seq #114: Lit_for_Chilopoda       Reading seq #115: Mas_gig_Thelyphonida       Reading seq #116: Nar_sp_Diplopoda       Reading seq #117: Nym_aem_IU20168451186       Reading seq #118: Nym_aus_IU2007129       Reading seq #119: Nym_aus_PYC048       Reading seq #120: Nym_bia_PYC086       Reading seq #121: Nym_cfapi_IU20161460       Reading seq #122: Nym_cfaus_PYC119       Reading seq #123: Nym_cfcon_PYC049       Reading seq #124: Nym_cffor_IU20217458       Reading seq #125: Nym_cha_IU2007327       Reading seq #126: Nym_dor_IU2016879       Reading seq #127: Nym_ele_PYC050       Reading seq #128: Nym_gir_IU20161429       Reading seq #129: Nym_gro_PYC051       Reading seq #130: Nym_mac_PYC052       Reading seq #131: Nym_mac_PYC053       Reading seq #132: Nym_mac_IU2011660       Reading seq #133: Nym_mar_IU2016889       Reading seq #134: Nym_mol_PYC054       Reading seq #135: Nym_pau_PYC120       Reading seq #136: Nym_sp_IU2012976       Reading seq #137: Nym_sp_IU20161472       Reading seq #138: Nym_sur_IU201318615       Reading seq #139: Nym_ten_PYC055       Reading seq #140: Nym_vil_PYC106       Reading seq #141: Nym_tap_PYC079       Reading seq #142: Nym_cur_IU2011760       Reading seq #143: Nym_duo_IU2016812       Reading seq #144: Nym_mus_IU201318640       Reading seq #145: Opi_par_Opiliones       Reading seq #146: Pal_amb_PYC039       Reading seq #147: Pal_fla_PYC040       Reading seq #148: Pal_pac_PYC041       Reading seq #149: Pal_ref_PYC042       Reading seq #150: Pal_spi_IU2016846       Reading seq #151: Pal_IU20092       Reading seq #152: Pal_IU20136558       Reading seq #153: Pal_ang_IU20166873       Reading seq #154: Pal_can_IU2016814       Reading seq #155: Pal_cfhie_PYC062       Reading seq #156: Pal_cfhod_PYC121       Reading seq #157: Pal_cfpat_PYC061       Reading seq #158: Pal_cfvir_IU20166879       Reading seq #159: Pal_cro_IU2011693       Reading seq #160: Pal_pat_IU2007134       Reading seq #161: Pal_pat_IU200820510       Reading seq #162: Pal_pil_IU2007310       Reading seq #163: Pal_sch_IU2016813       Reading seq #164: Pal_sp_IU20161471       Reading seq #165: Pal_sp_PYC010       Reading seq #166: Pal_sp_PYC059       Reading seq #167: Pan_arm_PYC002       Reading seq #168: Par_ber_IU20161221       Reading seq #169: Par_sp_IU2011605       Reading seq #170: Par_sp_IU2011675       Reading seq #171: Pen_ant_IU2007336       Reading seq #172: Pen_ant_PYC058       Reading seq #173: Pen_ant_PYC111       Reading seq #174: Pen_cfant_PYC113       Reading seq #175: Pen_sp_PYC057       Reading seq #176: Pen_sp_PYC112       Reading seq #177: Pen_cfbou_IU2007330       Reading seq #178: Pen_gea_IU20164187       Reading seq #179: Pen_sp_PYC069       Reading seq #180: Pha_opi_Opiliones       Reading seq #181: Pho_IU201318544       Reading seq #182: Pho_IU20136592       Reading seq #183: Pho_IU20136598       Reading seq #184: Pho_fem_PYC068       Reading seq #185: Phr_sp_Amblypygi       Reading seq #186: Pro_cfard_IU2011757       Reading seq #187: Pse_ger_Ricinulei       Reading seq #188: Pse_spi_PYC036       Reading seq #189: Pyc_IU2011618       Reading seq #190: Pyc_afr_IU2011104       Reading seq #191: Pyc_ces_IU201610338       Reading seq #192: Pyc_gai_IU2007126       Reading seq #193: Pyc_lit_PYC097       Reading seq #194: Pyc_mad_IU2011717       Reading seq #195: Pyc_sp_IU2007296       Reading seq #196: Pyc_sp_IU2007326       Reading seq #197: Pyc_sp_IU2011623       Reading seq #198: Pyc_sta_IU20166863       Reading seq #199: Rho_fil_IU20161476       Reading seq #200: Rhy_mon_PYC072       Reading seq #201: Ric_kar_Ricinulei       Reading seq #202: Scu_col_Chilopoda       Reading seq #203: Ser_het_IU201315606       Reading seq #204: Ser_sp_IU201319239       Reading seq #205: Ser_sp_PYC118       Reading seq #206: Squ_emp_Multicrustacea       Reading seq #207: Sty_che_PYC044       Reading seq #208: Tan_acu_IU2016856       Reading seq #209: Tan_bou_IU20161074       Reading seq #210: Tan_cal_PYC018       Reading seq #211: Tan_hum_IU2016868       Reading seq #212: Tan_ing_IU2016867       Reading seq #213: Tan_orb_GNBK       Reading seq #214: Tan_orb_IU2016872       Reading seq #215: Tan_orb_PYC019       Reading seq #216: Tan_tay_IU2016858       Reading seq #217: Tri_cas_Hexapoda       Reading seq #218: Tri_lon_Branchiopoda       
+Sequences read..
+
+9869 site patterns read, 22384 sites
+Counting frequencies..
+
+283836 bytes for distance
+68530336 bytes for conP
+315808 bytes for fhK
+8000000 bytes for space
+
+TREE #  1:
+272858112 bytes for conP, adjusted
+
+2 node(s) used for scaling (Yang 2000 J Mol Evol 51:423-432):
+225 332
+
+ntime & nrate & np:   433     1   435
+
+lnL0 = -616058.646164
+
+
+Round 1a: Paras (2) (e=5)
+Iterating by ming2
+Initial: fx= 616058.646164
+x=  4.89597  0.48757
+
+1 h-m-p  0.0000 0.0000 12886.6168 Y     615133.012713  0 0.0000     7 | 0/2
+2 h-m-p  0.0000 0.0015 3172.1708 ++YY  611395.941106  1 0.0005    15 | 0/2
+3 h-m-p  0.5413 2.7063   1.2095 Y     611003.884267  0 0.3247    20 | 0/2
+4 h-m-p  1.6000 8.0000   0.1240 Y     610957.696085  0 0.7624    25
+
+2.787581    0.403524         0:09
+
+Round 1b: Blengths (433, e=5)
+lnL0 =    -610957.696085
+Cycle  1: -561506.073012
+Cycle  2: -558891.547475
+Cycle  3: -558332.783434
+Cycle  4: -558231.783537
+Cycle  5: -558214.508013
+Cycle  6: -558209.258159
+Cycle  7: -558207.699615
+
+0:27
+
+
+Round 2a: Paras (2) (e=2.5)
+Iterating by ming2
+Initial: fx= 558207.699615
+x=  2.78758  0.40352
+
+1 h-m-p  0.0002 0.3466 2881.3301 -C    558172.508427  0 0.0000    34 | 0/2
+2 h-m-p  0.0003 0.0333  83.6754 C     558171.360865  0 0.0003    39 | 0/2
+3 h-m-p  1.6000 8.0000   0.0019 Y     558171.136499  0 1.0799    44
+
+2.760312    0.429585         0:32
+
+Round 2b: Blengths (433, e=2.5)
+lnL0 =    -558171.136499
+Cycle  1: -558165.006101
+Cycle  2: -558163.310130
+
+0:36
+
+
+Round 3a: Paras (2) (e=1.25)
+Iterating by ming2
+Initial: fx= 558163.310130
+x=  2.76031  0.42959
+
+1 h-m-p  0.0009 1.8378 545.8780 --Y   558161.908549  0 0.0000    54 | 0/2
+2 h-m-p  0.0008 0.3884  35.7989 Y     558161.702705  0 0.0003    59 | 0/2
+3 h-m-p  1.6000 8.0000   0.0001 Y     558161.702386  0 1.0134    64
+
+2.772373    0.434363         0:42
+
+Round 3b: Blengths (433, e=1.25)
+lnL0 =    -558161.702386
+Cycle  1: -558160.760173
+
+0:44
+
+
+Round 4a: Paras (2) (e=0.625)
+Iterating by ming2
+Initial: fx= 558160.760173
+x=  2.77237  0.43436
+
+1 h-m-p  0.0036 7.2766 138.1826 ---Y  558160.668831  0 0.0000    75 | 0/2
+2 h-m-p  0.0023 1.1402  11.9473 Y     558160.645854  0 0.0003    80 | 0/2
+3 h-m-p  1.6000 8.0000   0.0000 Y     558160.645852  0 0.9606    85
+
+2.776402    0.435555         0:50
+
+Round 4b: Blengths (433, e=0.625)
+lnL0 =    -558160.645852
+Cycle  1: -558160.291625
+
+0:52
+
+
+Round 5a: Paras (2) (e=0.001)
+Iterating by ming2
+Initial: fx= 558160.291625
+x=  2.77640  0.43555
+
+1 h-m-p  0.0040 8.0000  75.3441 ---Y  558160.264342  0 0.0000    96 | 0/2
+2 h-m-p  0.0036 1.7932   7.5234 -C    558160.255246  0 0.0003   102 | 0/2
+3 h-m-p  1.6000 8.0000   0.0000 Y     558160.255245  0 0.9680   107
+
+2.778938    0.436195         0:58
+
+Round 5b: Blengths (433, e=0.001)
+lnL0 =    -558160.255245
+Cycle  1: -558160.149335
+Cycle  2: -558160.129006
+Cycle  3: -558160.125749
+Cycle  4: -558160.125095
+
+1:07
+
+
+Round 6a: Paras (2) (e=0.00025)
+Iterating by ming2
+Initial: fx= 558160.125095
+x=  2.77894  0.43619
+
+1 h-m-p  0.0040 8.0000  57.9293 ---Y  558160.108959  0 0.0000   118 | 0/2
+2 h-m-p  0.0044 2.1825   6.1336 -C    558160.102900  0 0.0003   124 | 0/2
+3 h-m-p  1.6000 8.0000   0.0000 Y     558160.102900  0 0.8048   129
+
+2.781010    0.436683         1:13
+
+Round 6b: Blengths (433, e=0.00025)
+lnL0 =    -558160.102900
+Cycle  1: -558160.098282
+Cycle  2: -558160.096711
+Cycle  3: -558160.096386
+Cycle  4: -558160.096289
+
+1:23
+
+
+Round 7a: Paras (2) (e=6.25e-05)
+Iterating by ming2
+Initial: fx= 558160.096289
+x=  2.78101  0.43668
+
+1 h-m-p  0.0040 8.0000  16.3283 ---Y  558160.095008  0 0.0000   140 | 0/2
+2 h-m-p  0.0160 8.0000   1.5029 --C   558160.094643  0 0.0003   147 | 0/2
+3 h-m-p  1.6000 8.0000   0.0000 C     558160.094643  0 0.5551   152
+
+2.781518    0.436823         1:29
+
+Round 7b: Blengths (433, e=6.25e-05)
+lnL0 =    -558160.094643
+Cycle  1: -558160.094248
+Cycle  2: -558160.094087
+Cycle  3: -558160.094022
+Cycle  4: -558160.093974
+
+1:41
+
+
+Round 8a: Paras (2) (e=1.5625e-05)
+Iterating by ming2
+Initial: fx= 558160.093974
+x=  2.78152  0.43682
+
+1 h-m-p  0.0040 8.0000   4.4921 ---Y  558160.093877  0 0.0000   163 | 0/2
+2 h-m-p  0.0160 8.0000   0.4054 --C   558160.093849  0 0.0003   170 | 0/2
+3 h-m-p  1.6000 8.0000   0.0000 Y     558160.093849  0 0.9220   177
+
+2.781658    0.436861         1:47
+
+Round 8b: Blengths (433, e=1.5625e-05)
+lnL0 =    -558160.093849
+Cycle  1: -558160.093778
+Cycle  2: -558160.093725
+Cycle  3: -558160.093679
+Cycle  4: -558160.093635
+Cycle  5: -558160.093591
+Cycle  6: -558160.093547
+Cycle  7: -558160.093504
+Cycle  8: -558160.093460
+Cycle  9: -558160.093416
+Cycle 10: -558160.093372
+Cycle 11: -558160.093328
+Cycle 12: -558160.093284
+Cycle 13: -558160.093240
+Cycle 14: -558160.093196
+Cycle 15: -558160.093152
+Cycle 16: -558160.093108
+Cycle 17: -558160.093064
+Cycle 18: -558160.093020
+Cycle 19: -558160.092976
+Cycle 20: -558160.092932
+Cycle 21: -558160.092888
+Cycle 22: -558160.092844
+Cycle 23: -558160.092800
+Cycle 24: -558160.092758
+Cycle 25: -558160.092758
+
+8:39
+
+
+Round 9a: Paras (2) (e=3.90625e-06)
+Iterating by ming2
+Initial: fx= 558160.092758
+x=  2.78166  0.43686
+
+1 h-m-p  0.0040 8.0000   1.1402 ---Y  558160.092751  0 0.0000   188 | 0/2
+2 h-m-p  0.0160 8.0000   0.1108 --C   558160.092749  0 0.0003   195 | 0/2
+3 h-m-p  1.6000 8.0000   0.0000 Y     558160.092749  0 0.9747   202
+
+2.781695    0.436872         8:46
+
+Round 9b: Blengths (433, e=3.90625e-06)
+lnL0 =    -558160.092749
+Cycle  1: -558160.092746
+
+8:49
+
+
+Round 10a: Paras (2) (e=1e-06)
+Iterating by ming2
+Initial: fx= 558160.092746
+x=  2.78170  0.43687
+
+1 h-m-p  0.0040 8.0000   0.2268 ---Y  558160.092746  0 0.0000   213 | 0/2
+2 h-m-p  0.0160 8.0000   0.0173 --C   558160.092746  0 0.0003   222 | 0/2
+3 h-m-p  1.6000 8.0000   0.0000 C     558160.092746  0 1.6000   229
+
+2.781701    0.436874         8:57
+
+Round 10b: Blengths (433, e=1e-06)
+lnL0 =    -558160.092746
+Cycle  1: -558160.092745
+Cycle  2: -558160.092745
+
+9:17
+
+
+Round 11a: Paras (2) (e=1e-06)
+Iterating by ming2
+Initial: fx= 558160.092745
+x=  2.78170  0.43687
+
+1 h-m-p  0.0040 8.0000   0.1037 ---C  558160.092744  0 0.0000   240 | 0/2
+2 h-m-p  0.0160 8.0000   0.0168 --Y   558160.092744  0 0.0002   249 | 0/2
+3 h-m-p  1.5089 8.0000   0.0000 C     558160.092744  0 1.5089   256
+
+2.781707    0.436875         9:25
+
+Round 11b: Blengths (433, e=1e-06)
+lnL0 =    -558160.092744
+Cycle  1: -558160.092744
+
+9:39
+
+
+Round 12a: Paras (2) (e=1e-06)
+Iterating by ming2
+Initial: fx= 558160.092744
+x=  2.78171  0.43687
+
+1 h-m-p  0.0040 8.0000   0.0359 ------------..  | 0/2
+2 h-m-p  0.0160 8.0000   0.0150 ------------- | 0/2
+3 h-m-p  0.0160 8.0000   0.0150 -------------
+
+2.781707    0.436875         9:54
+
+Round 12b: Blengths (433, e=1e-06)
+lnL0 =    -558160.092744
+Cycle  1: -558160.092744
+
+10:13
+
+lnL  = -558160.092744
+Out...
+lnL  = -558160.092744
+Calculating SE's
+
+Warning: Hessian matrix may be unreliable for zero branch lengths
+
+Time used: 14:21
+
+BASEML FINISHED!
+
+Job ends: Wed Feb 7 09:58:19 GMT 2024

@@ -1,0 +1,14 @@
+CLK_noeurycyde
+median	20001
+min	20001
+max	20001
+num_samples_for_ESS	120006
+tail-ESS_med	50528
+tail-ESS_min	22964
+tail-ESS_max	59936
+bulk-ESS_med	40060
+bulk-ESS_min	22659
+bulk-ESS_max	59948
+minRhat	0.999952195904157
+maxRhat	1.00038060491041
+total_samples	120006

@@ -1,0 +1,14 @@
+GBM_noeurycyde
+median	20001
+min	16338
+max	20001
+num_samples_for_ESS	261408
+tail-ESS_med	114019
+tail-ESS_min	60966
+tail-ESS_max	129987
+bulk-ESS_med	89586
+bulk-ESS_min	35688
+bulk-ESS_max	128674
+minRhat	0.999947266433058
+maxRhat	1.00027042700388
+total_samples	316353
