@@ -1,4 +1,4 @@
-# List files/directories that cannot be commited to the repo due
+# List files/directories that cannot be committed to the repo due
 # to their file size or other incompatibilities
 
 ## Files too big to push for core analyses 

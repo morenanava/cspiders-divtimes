@@ -8,7 +8,7 @@ To get started, you can clone this repository on your PC and follow all the guid
 * Inferring the mean evolutionary rate to specify a sensible rate prior.
 * Running `PAML` programs for timetree inference:
   * Using various in-house pipelines to set up the working environment, the file structure, and the control files required to run `PAML` programs.
-  * Running `CODEML` to calculate the branch lengths, the gradient, and the Hessian; required by `MCMCtree` to enable the approximate likelihood calculation [dos Reis and Yang, 2011](https://academic.oup.com/mbe/article/28/7/2161/1051613).
+  * Running `BASEML` to calculate the branch lengths, the gradient, and the Hessian; required by `MCMCtree` to enable the approximate likelihood calculation [dos Reis and Yang, 2011](https://academic.oup.com/mbe/article/28/7/2161/1051613).
   * Running `MCMCtree` with the approximate likelihood calculation enabled for timetree inference. We assessed the impact that **including UCEs in the molecular alignment** and **constraining a node age using a fossil specimen still under debate** could have on timetree inference under both the Geometric Brownian motion (**GBM**, [Thorne et al., 1998](https://pubmed.ncbi.nlm.nih.gov/9866200/), [Yang and Rannala, 2006](https://pubmed.ncbi.nlm.nih.gov/16177230/)) and the independent-rates log-normal (**ILN**, [Rannala and Yang, 2007](https://pubmed.ncbi.nlm.nih.gov/17558967/), [Lemey et al., 2010](https://pubmed.ncbi.nlm.nih.gov/20203288/)) **relaxed-clock models**. The following tags are used to name files, directories, or specific analyses throughout this tutorial depending on the sequence alignment used and the calibration strategy chosen:
   * **`noeurycyde`**:
     * The sequence alignment includes the mitochondrial, 18S, and UCE sequences (i.e., what we label as "Matrix 1" in our manuscript).
@@ -45,7 +45,7 @@ We then generated the uncalibrated tree file to be used with `BASEML` to infer t
 
 Below, you can find a short description of what you can find in each directory:
 
-* [**`00_CODEML`**](01_PAML/00_CODEML/README.md): guidelines to infer the branch lengths, the gradient, and the Hessian with `CODEML`.
+* [**`00_BASEML`**](01_PAML/00_BASEML/README.md): guidelines to infer the branch lengths, the gradient, and the Hessian with `BASEML`.
 * [**`01_MCMCtree`**](01_PAML/01_MCMCtree/README.md): guidelines to run `MCMCtree` by enabling the approximate likelihood calculation ([dos Reis and Yang, 2011](https://academic.oup.com/mbe/article/28/7/2161/1051613)) under the **GBM and ILN relaxed-clock models** and when assessing the **impact of different calibration strategies and the inclusion of UCEs**. The directories with name `GBM` correspond to analyses under the autocorrelated-rates model and those with `ILN` under the independent-rates log-normal rates model. Inside these two directories, you will have directories `1`, `2`, and `3`:
   * Directory `1` contains all the relevant files for those analyses when the age of node Ascorhynchidae was **NOT** constrained and "Matrix 1" (UCEs **WERE** included) was used (i.e., file names will include `noeruycyde`).
   * Directory `2` will have those files generated and/or used when the age of node Ascorhynchidae **WAS** constrained and "Matrix 2" (UCEs were **NOT** included) (i.e., file names will include `noUCEs`).
@@ -67,10 +67,10 @@ Please note that each directory has all the data and scripts that you will need 
     * If you just want to recreate figures/tables/plots we have included in our paper with our results, please navigate to `01_PAML/01_MCMCtree` in the decompressed file you should have already downloaded, locate the `00_prior` and `01_posterior` directories, and save them in the corresponding `sum_analyses` directories in the file structure you are following as per this repository. Make sure that you save them in the same `01_PAML/01_MCMCtre` directory following the file structure! Then, you can run our scripts to generate the files you wanted.
     * If you want to compare your results to ours, please change the name of your `sum_analyses` directory with your own results so that you do not overwrite your files. Then, you can locate our `sum_analyses` directories in the downloaded archive and place them in the corresponding location in your file structure. You can then re-run our scripts with both your results and ours if you want to also test that you can recreate the same results that we report in our paper.
 
-In a nutshell, if you follow the instructions and run the code snippets and in-house scripts as detailed in each `README.md` file under directories `00_CODEML` and `01_MCMCtree`, you will be able to reproduce all our results! If you have re-run these analyses, then you shall be able to compare your results to ours!
+In a nutshell, if you follow the instructions and run the code snippets and in-house scripts as detailed in each `README.md` file under directories `00_BASEML` and `01_MCMCtree`, you will be able to reproduce all our results! If you have re-run these analyses, then you shall be able to compare your results to ours!
 
 > [!IMPORTANT]
-> Note that all the directories that you shall find inside the [`01_PAML` directory](01_PAML) have their own `README.md` file. To this end, you can navigate to each of these directories to read more about how we ran `CODEML` and `MCMCtree` under different settings (e.g., data type, calibration strategy, relaxed-clock model).
+> Note that all the directories that you shall find inside the [`01_PAML` directory](01_PAML) have their own `README.md` file. To this end, you can navigate to each of these directories to read more about how we ran `BASEML` and `MCMCtree` under different settings (e.g., data type, calibration strategy, relaxed-clock model).
 
 ## [Range Through Time plot](02_RTT_plots/README.md)
 
@@ -80,7 +80,7 @@ The in-house R script [`Create_RTT_plot.R`](scripts/Create_RTT_plot.R) is used t
 
 The main scripts that you call when you follow this tutorial are detailed below:
 
-* [Functions.R](src/Functions.R): this script has all the main in-house function we have written to analyse timetree inference results generated with `MCMCtree`. When running the MCMC diagnostics, you will be using those!
+* [Functions.R](src/Functions.R): this script has all the main in-house functions we have written to analyse timetree inference results generated with `MCMCtree`. When running the MCMC diagnostics, you will be using those!
 * [FASTAtoPHYL.pl](src/FASTAtoPHYL.pl): this script formats FASTA sequence files into PHYLIP sequence files.
 * [PHYLtoFASTA.pl](src/PHYLtoFASTA.pl): this script formats PHYLIP sequence files into FASTA sequence files.
 * [one_line_fasta.pl](src/one_line_fasta.pl): this script makes sure that there is one line for each sequence in FASTA sequence files.
@@ -97,7 +97,7 @@ Before you go through this step-by-step tutorial to reproduce our results, pleas
 
 > [!NOTE]
 >
-> **Linux users**: you may need to install the `intel` compilers before you run `make -f Makefile`. Please visit this link to download the [Intel oneAPI Base Toolkit](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#dpcpp-cpp). Thank you, [@ERRMoody](https://github.com/ERRMoody), for pointing this out!
+> **Linux users**: you may need to install the `intel` compilers before you run `make -f Makefile`. Please visit this link to download the [Intel oneAPI Base Toolkit](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#dpcpp-cpp).
 
 * **`R`** and **`RStudio`**: please download [R](https://cran.r-project.org/) (i.e., select either `Download R for Linux`, `Download R for macOS`, or `Download R for Windows` depending on your OS; then follow the installation instructions) and [RStudio](https://posit.co/download/rstudio-desktop/) as you will need them to run various of our in-house R scripts. The packages you will need to install work with R versions that are either newer than or equal to v4.1.2 (we used v4.1.2). If you are a Windows user, please make sure that you have the correct version of `RTools` installed, which will allow you to install packages from the source code if required. For instance, if you have R v4.1.2, then installing `RTools4.0` shall be fine. If you have another R version installed on your PC, please check whether you need to install `RTools 4.2` or `RTools 4.3`. For more information on which version you should download, [please go to the CRAN website by following this link and download the version you need](https://cran.r-project.org/bin/windows/Rtools/).
 
@@ -125,7 +125,7 @@ Before you go through this step-by-step tutorial to reproduce our results, pleas
   
 > [!NOTE]
 >
-> **Linux users**: you may experience some problems when you try to execute the `install.packages()` command that you see in the code snippet above. If that is the case, please install each package separately (e.g., `install.packages( 'rstudioapi' )` to install `rstudioapi`, etc.). If you experience problems with `stringr`, please follow the [suggestions given in this StackOverflow page](https://stackoverflow.com/questions/38987157/libicu-and-stringi-on-fedora-24-causing-r-headaches/39411793#39411793) -- despite the question being addressed for Fedora, the solution suggested also works for Ubuntu. Thank you, [@ERRMoody](https://github.com/ERRMoody), for pointing this out!
+> **Linux users**: you may experience some problems when you try to execute the `install.packages()` command that you see in the code snippet above. If that is the case, please install each package separately (e.g., `install.packages( 'rstudioapi' )` to install `rstudioapi`, etc.). If you experience problems with `stringr`, please follow the [suggestions given in this StackOverflow page](https://stackoverflow.com/questions/38987157/libicu-and-stringi-on-fedora-24-causing-r-headaches/39411793#39411793) -- despite the question being addressed for Fedora, the solution suggested also works for Ubuntu.
 
 * **`TreeViewer`**: you can use `TreeViewer` ([Bianchini and Sánchez-Baracaldo, 2024](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10873)) as a graphical interface with which you can display and highly customise the format of the timetrees we have generated and include in this repository. You may want to read [the `TreeViewer` documentation](https://github.com/arklumpus/TreeViewer/wiki) to learn more about which modules you can use and how you can improve the design of your timetrees (e.g., include/exclude densities, include pictures, play with various colours and shapes, etc.). You can [download `TreeViewer` by following this link](https://treeviewer.org/).
 

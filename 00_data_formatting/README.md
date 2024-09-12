@@ -62,7 +62,7 @@ The alignments are now in the correct format, so we can start to parse the tree 
 
 After using our [R in-house script](scripts/Fix_seq_ids.R) when formatting our alignments, we also formatted our tree files: all the files which name ends with `newIDs.tree` saved inside the [`trees` directory](00_raw_data/trees/) are in Newick format, contain branch lengths, and have the new sequence IDs!
 
-The first thing that we need to do is generating tree file with only the tree topology (i.e., no branch lengths) so that we can run `CODEML` to calculate the Hessian, the gradient, and the branch lengths prior to timetree inference -- they are needed to approximate the likelihood calculation!
+The first thing that we need to do is generating tree file with only the tree topology (i.e., no branch lengths) so that we can run `BASEML` to calculate the Hessian, the gradient, and the branch lengths prior to timetree inference -- they are needed to approximate the likelihood calculation!
 
 ```sh
 # Run from `00_raw_data/trees`, newly created directory
@@ -87,4 +87,4 @@ Now, we can calibrate these topologies following the calibration files we have d
 
 Once you have run our [R in-house script `Include_calibrations.R`](scripts/Include_calibrations.R), you will see that the calibrated tree files with nodes labelled following `MCMCtree` notation are output in the [`01_inp_data`](01_inp_data) directory (i.e., check all files which name ends with `calib_MCMCtree.tree`). In addition, files ending with `fordisplay_calib_MCMCtree.tree` will have been output in directory [`00_raw_data/trees`](00_raw_data/trees/), which can be opened with graphical viewers such as `FigTree` or `TreeViewer` ([Bianchini and Sánchez-Baracaldo, 2024](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10873)) to see which nodes have been calibrated and how.
 
-Now, we can move onto the next step: [we can calculate the Hessian, the branch lengths, and the gradient with `CODEML`!](../01_PAML/00_CODEML/README.md)
+Now, we can move onto the next step: [we can calculate the Hessian, the branch lengths, and the gradient with `BASEML`!](../01_PAML/00_BASEML/README.md)
