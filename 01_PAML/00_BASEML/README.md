@@ -224,7 +224,7 @@ grep 'model' */*/tmp0001.ctl   # You should see `model = 3` (i.e., empirical+F m
 
 We can now run `BASEML` given that we have the control file ready as well as all the required input files!
 
-We have created a template bash script with flags (i.e., see script `pipeline_Hessian_BASEML_template.sh` in the [`scripts` directory](01_PAML/00_Hessian/scripts/pipeline_Hessian_BASEML_template.sh)), which will be replaced with the appropriate values by another bash script (`generate_job_BASEML.sh`, also saved in the [`scripts` directory](01_PAML/00_Hessian/scripts/generate_job_BASEML.sh)). Please note that the second bash script will edit the template bash script according to the data alignment/s that will be analysed. We had already transferred these scripts to the HPC server when setting up our file structure. Therefore, we just need to execute the following code snippet there:
+We have created a template bash script with flags (i.e., see script `pipeline_Hessian_BASEML_template.sh` in the [`scripts` directory](01_PAML/00_BASEML/scripts/pipeline_Hessian_BASEML_template.sh)), which will be replaced with the appropriate values by another bash script (`generate_job_BASEML.sh`, also saved in the [`scripts` directory](01_PAML/00_BASEML/scripts/generate_job_BASEML.sh)). Please note that the second bash script will edit the template bash script according to the data alignment/s that will be analysed. We had already transferred these scripts to the HPC server when setting up our file structure. Therefore, we just need to execute the following code snippet there:
 
 ```sh
 # Run from `spiders_dating` dir on your HPC. Please change directories until
