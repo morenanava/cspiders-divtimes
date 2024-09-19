@@ -217,7 +217,7 @@ sed -i 's/method\ \=\ 0/method\ \=\ 1/' */*/tmp0001.ctl
 grep 'method = 1' */*/tmp0001.ctl | wc -l # You should get as many as datasets you have
 grep 'alpha' */*/tmp0001.ctl   # You should see `fix_alpha = 0` and `alpha = 0.5`
 grep 'ncatG' */*/tmp0001.ctl   # You should see `ncatG = 4`
-grep 'model' */*/tmp0001.ctl   # You should see `model = 3` (i.e., empirical+F model)
+grep 'model' */*/tmp0001.ctl   # You should see `model = 4` (i.e., HKY85)
 ```
 
 ### Executing `BASEML`
