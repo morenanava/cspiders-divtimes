@@ -1,0 +1,12 @@
+# Supplementary Material -- timetree inference
+
+The figures and tables you shall find in this directory have been generated using timetree inference results. Please find below figure and table captions for each of these files:
+
+* [**Table S3**](TableS3.xlsx): comparison of posterior time densities and confidence intervals estimated for those family nodes corresponding to the main diversification events. Time estimates were obtained when using “Matrix 1” (with UCEs, label “supaln” in data files) and “Matrix 2” (no UCEs, label “noUCEs” in data files) and analysed under the GBM relaxed-clock model. Please note that the time estimates reported here were obtained when all node age constraints were applied during timetree inference.
+* [**Table S4**](TableS4.xlsx): summary of the MCMC diagnostics carried out for all the chains we ran when sampling from the prior and from the posterior for our three datasets. Tail-ESS, bulk-ESS, and Rhat values were computed using an in-house wrapper of the R function rstan::monitor (R package Rstan v.2.21.7, https://mc-stan.org/rstan/).
+* [**Table S5**](TableS5.xlsx): estimated posterior mean divergence times and corresponding 95% Confidence Intervals (i.e., 2.5% and 97.5% quantiles) for our three datasets when sampling from the prior and the posterior. Regarding the latter, time estimates and CIs under both the GBM and the ILN relaxed-clock models are reported. All time estimates are reported in million years (Mya).
+* [**Figure S1**](FigureS1.pdf): for each calibrated node, marginal densities estimated when sampling from the prior (black, also known as “effective prior”) have been plotted together with the calibration densities (blue, also referred to as “user-specified prior”) that we specified based on the fossil record. The name of the node (sometimes truncated due to character limit restrictions in our plotting function) and its label as per the node number given by MCMCtree have also been included in each plot.
+* [**Figure S2**](FigureS2.pdf): scatterplots showing the estimated posterior mean divergence times for the MCMC runs under the GBM relaxed-clock model when sampling from the prior and the posterior for every dataset. These plots are used to visually assess for chain convergence, which is assumed if the mean estimates for half of the chains fall almost in a straight line (i.e., x ≃y) when plotted against the other half.
+
+> [!NOTE]
+> Footer notes are included in the excel spreadsheets to clarify abbreviations or content present in the table.
