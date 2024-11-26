@@ -47,7 +47,7 @@ occurenceDataSpecies$taxonomy <- NA
 gtmin <- which( occurenceDataSpecies$min_ma>252 )
 ltmin <- which( occurenceDataSpecies$min_ma<252 )
 occurenceDataSpecies[gtmin,]$taxonomy <- "Stem"
-occurenceDataSpecies[ltmin,]$taxonomy <- "Pantopod"
+occurenceDataSpecies[ltmin,]$taxonomy <- "Pantopoda"
 
 # Add Cambropycnogon, which is not in PBDB, but is of note
 Cambropycnogon <- occurenceDataSpecies[1,]
