@@ -35,7 +35,8 @@ Then, we just need to reconvert the newly FASTA-formatted files into PHYLIP form
 # If not, please move to this directory and run the
 # following commands
 #
-# First, fix potential problems with out R files
+# First, fix problems with the "\r" due to being
+# a file output by R
 sed -i 's/\r//g' *newIDs.fasta
 # Now, generate PHY format
 for aln_name in *newIDs.fasta
@@ -44,7 +45,8 @@ a_noext=$( echo $aln_name | sed 's/\_newIDs\.fasta//' )
 num=$( grep '>' $aln_name | wc -l )
 len=$( sed -n '2,2p' $aln_name | sed 's/\r//' | sed 's/\n//' | wc --m )
 perl ../../../src/FASTAtoPHYL.pl $aln_name $num $len 
-# Create a directory for input data for `MCMCtree`
+# Create a directory for input data to be used
+# by `MCMCtree`
 if [ ! -d "../../01_inp_data" ]
 then
 mkdir ../../01_inp_data

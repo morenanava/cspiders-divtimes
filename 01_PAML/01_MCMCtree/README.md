@@ -10,7 +10,7 @@ First, we will create the file structure required for the timetree inference ana
 # Run from `spiders_dating` dir on your HPC
 # Please change directories until
 # you are there
-# Then, run the following commands.
+# Then, run the following commands
 num_aln=3     # num_dirs --> 1: "noeurycyde", 2: "noUCEs", 3: "supaln"
 num_chains=16 # num chains we will run
 for j in `seq 1 $num_chains`
@@ -40,6 +40,10 @@ spiders_dating
        |- [1-3] # One for each dataset
             |- [GBM|ILN]/
 ```
+
+> [!NOTE]
+>
+> When sampling from the posterior, the likelihood is being calculated or approximated, depending on the `userdata` option you set in the control file to run `MCMCtree`. In other words, the larger the dataset, the more time it will take for `MCMCtree` to finish.
 
 Now, we will transfer our in-house bash scripts and corresponding template files with which we will parse our data and generate the job arrays that will be submitted to the HPC to run `MCMCtree`:
 
@@ -100,31 +104,26 @@ done
 done
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > When sampling from the prior, the likelihood is not being calculated or estimated. In other words, the most time-consuming part of the MCMC does not take place. To this end, you should be able to gather enough samples with fewer runs than those needed when sampling from the posterior.
 
 Then, we will copy the directory `pipelines_MCMCtree` and will generate a copy called `pipelines_MCMCtree_prior` :
 
 ```sh
-# Run from `spiders_dating` dir on your HPC.
+# Run from `spiders_dating` dir on your HPC
 # Please change directories until
-# you are there. Then run the following
-# commands.
+# you are there
+# Then run the following commands
 cp -R pipelines_MCMCtree pipelines_MCMCtree_prior
 cd pipelines_MCMCtree_prior
 ```
 
-We will modify the bash script that will be submitted as a job array so that the `userdata` option in the control file is equal to `0`, which enables `MCMCtree` to sample from the prior instead of sampling from the posterior (i.e., the alignment file is ignored). The rest of the setting concerning the evolutionary model will not be enabled by `MCMCtree` as the sequence data are not being used. Lastly, we will change the path to where the results will be stored:
+We will modify the bash script that will be submitted as a job array so that the `userdata` option in the control file is equal to `0`, which enables `MCMCtree` to sample from the prior instead of sampling from the posterior (i.e., the alignment file is ignored). The rest of the settings concerning the evolutionary model will not be enabled by `MCMCtree` as the sequence data are not being used. Lastly, we will change the path to where the results will be stored:
 
 ```sh
 # Run from `pipelines_MCMCtree_prior` dir on your HPC
 # Please change directories until you are there
 # Then run the following commands
-# 
-# Prepare directories to sample from the prior,
-# only one needed as nucleotide subsitution models 
-# are not used.
-#
 num_aln=3
 home_dir=$( pwd )
 for i in `seq 1 $num_aln`
@@ -154,10 +153,10 @@ sed -i 's/-t 1-16/-t 1-6/' */*/*sh
 Now, you can check that the lines have been correctly modified:
 
 ```sh
-# Run from `pipelines_MCMCtree_prior` dir on your HPC.
+# Run from `pipelines_MCMCtree_prior` dir on your HPC
 # Please change directories until
-# you are there. Then run the following
-# commands.
+# you are there
+# Then run the following commands
 cd ../
 grep '^dir=' */*/*sh
 grep 'usedata' */*/*sh
@@ -173,10 +172,10 @@ grep '#$ -t' */*/*sh
 Now, we will be able to run `MCMCtree` first when sampling from the prior (i.e., no data used!) using the code snippet below:
 
 ```sh
-# Run from `pipelines_MCMCtree_prior/CLK` dir on your HPC.
+# Run from `pipelines_MCMCtree_prior/CLK` dir on your HPC
 # Please change directories until
-# you are there. Then run the following
-# commands.
+# you are there
+# Then run the following commands
 chmod 775 *sh
 qsub pipeline_CLK.sh
 ```
@@ -213,13 +212,6 @@ Now, you can transfer the temporary directory to the local PC, e.g., using `rsyn
 # Run from `01_PAML/01_MCMCtree` dir on your local PC
 # Please change directories until you are there
 # Then run the following commands
-# If you are running this code with your
-# own analyses, make sure that you have correctly
-# defined `num_aln` and `num_chains` variables with
-# the correct values!
-# Note that we will generate some directories for
-# when the analyses when sampling from the posterior
-# are ready!
 mkdir sum_analyses
 cd sum_analyses
 # Now, trasnfer the data from the HPC
@@ -261,6 +253,15 @@ printf "Ammotheidae;392;0\n" >> $i
 done
 ```
 
+The file format is the following:
+
+```txt
+Calib;node;Prior
+<calibration_tag>;<MCMCtree_node_number>;'<MCMCtree_calibration_format>'
+```
+
+This semi-colon separated files are used by subsequent R in-house scripts when summarising the results as part of the MCMC diagnostics.
+
 ---
 
 Now, we can run the R script [`MCMC_diagnostics_prior.R`](scripts/MCMC_diagnostics_prior.R) and follow the detailed step-by-step instructions detailed in the script. In a nutshell, the protocol will be the following:
@@ -271,6 +272,13 @@ Now, we can run the R script [`MCMC_diagnostics_prior.R`](scripts/MCMC_diagnosti
 4. If some chains have not passed the filters mentioned above, create an object with the chains that have passed the filters.
 5. Generate a new convergence plot with those chains that passed the filters.
 6. Calculate Rhat, tail-ESS, and bulk-ESS to check whether chain convergence has been reached with the chains that have passed filters.
+
+> [!IMPORTANT]
+> Once you have run the aforementioned R script, you have to visit the content of directories `sum_analyses/00_prior/CLK/[0-9]*/[0-9]*/` to check whether the chains ran under each hypothesis and clock model passed the filters.
+>
+> An example of how the directory should look like after the MCMC diagnostics ran **if all chains have passed the filters** can be found inside [`00_prior/CLK/1/1`](sum_analyses/00_prior/CLK/1/1). If you visit this directory, you will see that, apart from directories `1` to `6` (i.e., one directory per chain; we ran 6 chains), there is another directory called `noeurycyde`. There are no additional text files or directories with the name of the hypothesis, and so all 6 chains have passed the filters. The `tsv` files you should find inside `noeurycyde` have the summarised posterior mean divergence times and corresponding CIs for each node. Please note that the file with suffix `*all_mean_est.tsv` has both mean divergence times and CIs, and so we recommended you use this file to generate a final table with the timetree inference results. In addition, if you navigate to directory [`out_RData`](out_RData), you will find individual text files for each hypothesis analysed with the MCMC summary stats. You can also check the convergence plots inside directory [`plots/ESS_and_chains_convergence`](plots/ESS_and_chains_convergence/).
+>
+> **If some chains had NOT passed the filters**, we would have found an additional directory. E.g.: following the directory name used in the example above, we would have seen `noeurycyde` and `noeurycyde_FILT`. A directory with suffix `FILT` will only be created if there are chains that have not passed the filters. In addition, two files will also be created: `chains_kept.txt` and `check_chains.txt`. The former can be used to know which chains have been used to run the final MCMC diagnostics (i.e., results under `*FILT` directory) and the latter to know which chains are the problematic ones, and thus discarded from the final analyses. If there were nodes which Rhat was higher than 1.05, then such chains would be labelled as "problematic", and they would be listed in another text file starting with `problem_nodes_conv_<hyp>`, being `<hyp>` the flag given to the analysed dataset (e.g., `noeurycyde`). You would also find the convergence plots with the unfiltered chains inside directory [`plots/ESS_and_chains_convergence`](plots/ESS_and_chains_convergence/).
 
 The MCMC diagnostics did not find any of the chains problematic after running [our in-house R script `MCMC_diagnostics_prior.R`](scripts/MCMC_diagnostics_prior.R). Therefore, we used [our in-house bash script `Combine_MCMC.sh`](scripts/Combine_MCMC.sh) to concatenate all the `mcmc.txt` files for the 6 chains in a unique file.
 
@@ -302,9 +310,9 @@ done
 
 The script above will generate directories called `mcmc_files*_CLK` inside the `00_prior` directory, where the `mcmc.txt` with the concatenated samples will be saved. In addition, directories with individual `mcmc.txt` files of those chains that passed the filters will be created (i.e., see `mcmcf4traces*_CLK` directories); you can read such files in programs like `Tracer` to assess the traces and run other visual MCMC diagnostics.
 
-We will now create a dummy alignment with only 2 AAs, which is required to generate the `FigTree` files with the mean time estimates obtained when using the concatenated `mcmc.txt` files. In order to do that, we can run the `Generate_dummy_aln.R`. Once you run this script, a new directory called `dummy_aln` will be created, which will contain the input dummy alignment.
+We will now create a dummy alignment with only 2 nucleotides, a dummy file required to generate the `FigTree` files with the mean time estimates obtained when using the concatenated `mcmc.txt` files. In order to do that, we can run the [`Generate_dummy_aln.R`](scripts/Generate_dummy_aln.R). Once you run this script, a new directory called `dummy_aln` will be created, which will contain the input dummy alignment.
 
-We have also generated dummy control file to read the dummy alignment. Additionally, we have enabled option `print = -1`. This print setting lets `MCMCtree` know that an MCMC is not to be run. Instead, `MCMCtree` is told to read the input files (file with the dummy alignment, the calibrated tree file, and the concatenated `mcmc.txt` file) and summarise the samples in the `mcmc.txt` (those that were collected from those chains that passed the filters!). The final mean estimated divergence times and the corresponding CIs will be written in the output `FigTree.tre` file.
+We have also generated a dummy control file to read the dummy alignment. Additionally, we have enabled option `print = -1`. This print setting lets `MCMCtree` know that an MCMC is not to be run. Instead, `MCMCtree` is told to read the input files (file with the dummy alignment, the calibrated tree file, and the concatenated `mcmc.txt` file) and summarise the samples in the `mcmc.txt` (those that were collected from those chains that passed the filters!). The final mean estimated divergence times and the corresponding CIs will be written in the output `FigTree.tre` file.
 
 ```sh
 ##> [IMPORTANT] Before running the `for` loop below,
@@ -366,16 +374,17 @@ cd $base_dir
 done
 ```
 
-The next step is to plot the user-specified prior VS the effective prior. We used our in-house R script [`Check_priors_effVSuser.R`](scripts/Check_priors_effVSuser.R) to generate these plots. If you are to run this script with other datasets, however, make sure that your "hard bounds" are not `0.000` in the `Calibnodes_*csv` files and, instead, they are `1e-300` (i.e., while 1e-300 is rounded to `0.000` in the `MCMCtre` output, which can be used to generate the csv files aforementioned, we need `1e-300` to plot distributions in R). To make sure this was not affecting our csv files, we ran the following code snippet:
+The next step is to plot the marginal densities VS the calibration densities. We used our in-house R script [`Check_priors_margVScalib.R`](scripts/Check_priors_margVScalib.R) to generate these plots. If you are to run this script with other datasets, however, make sure that your "hard bounds" are not `0.000` in the `Calibnodes_*csv` files and, instead, they are `1e-300` (i.e., while 1e-300 is rounded to `0.000` in the `MCMCtre` output, which can be used to generate the csv files aforementioned, we need `1e-300` to plot distributions in R). To make sure this was not affecting our csv files, we ran the following code snippet:
 
 ```sh
 # Run from `01_MCMCtree/calib_files`
 sed -i 's/0\.000/1e\-300/g' *csv
+sed -i 's/0\.000/1E\-300/g' *csv
 ```
 
-The next step is to plot the marginal densities VS the calibration densities. We used our in-house R script [`Check_priors_margVScalib.R`](scripts/Check_priors_margVScalib.R) to generate these plots. Once this script has finished, you will see that a new directory `plots/margVScalib` will have been created. Inside this directory, you will find one directory for each individual dataset with individual plots for each node. In addition, all these plots have been merged into a unique document as well (note: some plots may be too small to see for each node, hence why we have generated individual plots).
+Once this script has finished, you will see that a new directory `plots/margVScalib` will have been created. Inside this directory, you will find one directory for each individual dataset with individual plots for each node. In addition, all these plots have been merged into a unique document as well (note: some plots may be too small to see for each node, hence why we have generated individual plots). They have been plotted in JPG, PDF, and TIF format. At the same time, you will see that PDF files that start with `dupnodes_*` will have been created inside the `plots` directory: they are used to verify that the nodes that were cross-braced have indeed the same density!
 
-Now, once the MCMC diagnostics have finished, you can extract the relevant output that we used to write our manuscript:
+Now, once the MCMC diagnostics have finished, you can extract the final data that you can use to write a manuscript as it follows:
 
 ```sh
 # Run from `01_MCMCtree`
@@ -464,7 +473,16 @@ rm pipelines_MCMCtree/*/*/*sh.o*
 
 Now that we have the output files from the different MCMC runs in an organised file structure, we are ready to check the chains for convergence!
 
-We are going to run the R script [`MCMC_diagnostics_posterior.R`](scripts/MCMC_diagnostics_posterior.R) and follow the detailed step-by-step instructions detailed in the script, which are essentially the same ones we used when analysing the chains when sampling from the prior. Given that no problems have been found with any of the chains we ran, we are ready to concatenate the parameter values sampled across the 16 independent chains we ran:
+We are going to run the R script [`MCMC_diagnostics_posterior.R`](scripts/MCMC_diagnostics_posterior.R) and follow the detailed step-by-step instructions detailed in the script, which are essentially the same ones we used when analysing the chains when sampling from the prior.
+
+> [!IMPORTANT]
+> Once you run the R script mentioned above, you will have to go inside directories `sum_analyses/01_posterior/GBM/[0-9]*/[0-9]*` and `sum_analyses/01_posterior/ILN/[0-9]*/` to check whether the chains ran under each hypothesis and clock model have passed the filters.
+>
+> An example of how the directory should look like after the MCMC diagnostics ran **if all chains have passed the filters** can be found inside [`01_posterior/GBM/1/1`](sum_analyses/01_posterior/GBM/1/1). If you visit this directory, you will see that, apart from directories `1` to `16` (i.e., one directory per chain; we ran 16 chains), there is another directory called `noeurycyde_GBM` (i.e., remember that analyses under directory `1` were run  hypothesis `noeurycyde`!). There are no additional text files or directories with the name of the hypothesis, and so all 16 chains have passed the filters. The `tsv` files you should find inside `noeurycyde_GBM` have the summarised posterior mean divergence times and corresponding CIs for each node. Please note that the file with suffix `*all_mean_est.tsv` has both mean divergence times and CIs, and so we recommended you use this file to generate a final table with the timetree inference results. In addition, if you navigate to directory [`out_RData`](out_RData), you will find individual text files for each hypothesis analysed with the corresponding MCMC summary stats. In other words, you will find one file for each hypothesis evaluated under the autocorrelated-rates model (i.e., tag `GBM` in the corresponding file names) and the independent-rates log-normal model (i.e., tag `ILN` in the corresponding file names). You can also check the convergence plots inside directory [`plots/ESS_and_chains_convergence`](plots/ESS_and_chains_convergence/).
+>
+> In this study, all the chains we ran passed the filters, and so we subsequently describe what you would expect if some chains did not pass the filters. Firstly,aApart from directories `1` to `16` (i.e., one directory per chain; we ran 16 chains), we would find two directories: one with the summary stats with all the chains and another with only those filtered chains. Following the example above, we would find one directory called `noeurycyde_GBM` and another called `noeurycyde_GBM_FILT`. The latter directory would have the results when using only the filtered chains, while the former would have used all the 16 chains to summarise the results. You would also find a text file called [`chains_kept.txt`](sum_analyses/01_posterior/ILN/1/check_chains.txt) with the numbers of those chains that passed the filters as well as another file called [`check_chains.txt`](sum_analyses/01_posterior/ILN/1/chains_kept.txt) with those that did not. These two files will always have the same name -- if you see these files inside the [`01_posterior/(GBM|ILN)/[0-9]*/*`] directories, then some chains have been filtered out! In addition, if there had been nodes which Rhat was higher than 1.05, they would have been labelled as "problematic", and they would have been listed in another text file called `problem_nodes_conb_<hyp>.txt`, being `<hyp>` the flag given to the analysed dataset. You could also find the convergence plots with the unfiltered chains inside directory [`plots/ESS_and_chains_convergence`](plots/ESS_and_chains_convergence/).
+
+Given that no problems have been found with any of the chains we ran, we are ready to concatenate the parameter values sampled across the 16 independent chains we ran:
 
 ```sh
 # Run from `01_MCMCtree/scripts`

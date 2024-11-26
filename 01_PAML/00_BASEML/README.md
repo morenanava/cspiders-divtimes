@@ -122,10 +122,10 @@ Please note that `MCMCtree` and `BASEML` are the `PAML` programs that we will us
 Now, we need to generate other input files to estimate the Hessian and the gradient: the input control files for `BASEML`. To do this in a reproducible manner, you can use the [script `generate_prepbaseml.sh`](scripts/generate_prepbaseml.sh), which you can find in the [`01_PAML/00_BASEML/scripts`](01_PAML/00_BASEML/scripts) and which you should have just transferred to your HPC. Now, connect to your server and run the next code snippet, where you will execute this script. Specifically, the [`generate_prepbaseml.sh` script](scripts/generate_prepbaseml.sh) needs one argument: the directory name where the alignments are saved: `1`, `2`, and `3` in our case!
 
 ```sh
-# Run from `spiders_dating/scripts` in the HPC.
+# Run from `spiders_dating/scripts` in the HPC
 # Please change directories until
-# you are there. Then, run the following
-# commands.
+# you are there
+# Then, run the following commands
 chmod 775 *sh
 # In this case, there are three alignments, so
 # we can execute our script within a loop
@@ -139,10 +139,11 @@ done
 To make sure that all the paths have been properly extracted, you can run the following code snippet:
 
 ```sh
-# Run from `spiders_dating/Hessian` dir on your local
-# PC. Please change directories until
-# you are there. Then, run the following
-# commands.
+# Run from `spiders_dating/Hessian` dir on
+# your local PC
+# Please change directories until
+# you are there
+# Then, run the following commands
 grep 'seqfile' */prepare_baseml/*ctl
 grep 'treefile' */prepare_baseml/*ctl
 ```
@@ -156,15 +157,19 @@ Now that we have the input files (alignment and tree files) and the instructions
 ```sh
 # Run `MCMCtree` from
 # `spiders_dating/Hessian/1/prepare_baseml`
-# dir on the HPC. 
+# dir on the HPC
 # Please change directories until
-# you are in there.
+# you are in there
 # The first command to change directories 
 # will work if you are still in 
 # `main/Hessian`, otherwise ignore and 
 # move to such directory with the command
 # that best suits your current directory.
-# Keep changing the value of "dir" to 1, 2, 3:
+# Change the value of var `dir=1`
+# to `dir=2` and `dir=3` once you have 
+# finished to run `MCMCtree`
+# Before doing that, however, please read 
+# the text below!
 dir=1
 cd $dir/prepare_baseml
 ../../../mcmctree4.10.7 prepbaseml*ctl
@@ -192,10 +197,11 @@ Counting frequencies..
 As soon as you see the last line, you will see that various `tmp000X*` files will have been created, and hence you can stop this run by typing `ctrl+C` on the terminal that you have used to run such command. Once you have done this, you can check that the control file you will later need has been created:
 
 ```sh
-# Run from the `spiders_dating/Hessian` dir on your local
-# PC. Please change directories until
-# you are there. Then, run the following
-# commands.
+# Run from the `spiders_dating/Hessian` dir
+# on your local PC
+# Please change directories until
+# you are there
+# Then, run the following commands
 grep 'seqfile' */*/tmp0001.ctl | wc -l # You should get as many datasets as you have, in this case 3
 ```
 
@@ -209,10 +215,11 @@ Note that, when we ran the commands above, we were not interested in running `BA
 Once all `tmp000*` files are generated for all alignments, we need to make sure that the correct evolutionary model has been enabled (i.e., `model = 4`, `ncatG=4` for HKY85+G4) and that option `method = 1` is enabled, which will speed up the computation of the Hessian and the gradient. We can run the next code snippet to very that the four requirements aforementioned are met:
 
 ```sh
-# Run from the `spiders_dating/Hessian` dir on your local
-# PC. Please change directories until
-# you are there. Then, run the following
-# commands.
+# Run from the `spiders_dating/Hessian` dir
+# on your local PC
+# Please change directories until
+# you are there
+# Then, run the following commands
 sed -i 's/method\ \=\ 0/method\ \=\ 1/' */*/tmp0001.ctl
 grep 'method = 1' */*/tmp0001.ctl | wc -l # You should get as many as datasets you have
 grep 'alpha' */*/tmp0001.ctl   # You should see `fix_alpha = 0` and `alpha = 0.5`
@@ -227,9 +234,10 @@ We can now run `BASEML` given that we have the control file ready as well as all
 We have created a template bash script with flags (i.e., see script `pipeline_Hessian_BASEML_template.sh` in the [`scripts` directory](01_PAML/00_BASEML/scripts/pipeline_Hessian_BASEML_template.sh)), which will be replaced with the appropriate values by another bash script (`generate_job_BASEML.sh`, also saved in the [`scripts` directory](01_PAML/00_BASEML/scripts/generate_job_BASEML.sh)). Please note that the second bash script will edit the template bash script according to the data alignment/s that will be analysed. We had already transferred these scripts to the HPC server when setting up our file structure. Therefore, we just need to execute the following code snippet there:
 
 ```sh
-# Run from `spiders_dating` dir on your HPC. Please change directories until
-# you are there. Then, run the following
-# commands.
+# Run from `spiders_dating` dir on your HPC
+# Please change directories until
+# you are there
+# Then, run the following commands
 home_dir=$( pwd )
 cd scripts
 chmod 775 *sh
@@ -248,15 +256,8 @@ Next, we will go to the `pipelines_Hessian` directory and run the script that wi
 ```sh
 # Run from `spiders_dating/pipelines_Hessian` dir on your HPC.
 # Please change directories until
-# you are there. Then, run the following
-# commands.
-#
-# If you list the content of this directory,
-# you will see the pipeline you will need 
-# to execute in a bash script called
-# `pipeline_Hessian.sh`
-ll *
-# Now, execute this bash script
+# you are there
+# Then, run the following commands
 chmod 775 *sh
 qsub pipeline_Hessian.sh
 ```
@@ -266,8 +267,8 @@ Once `BASEML` finishes, we are ready to generate the `in.BV` file that we will l
 ```sh
 # Run from dir `spiders_dating/Hessian/` dir on your HPC
 # Please change directories until
-# you are there. Then, run the following
-# commands.
+# you are there
+# Then, run the following commands
 num_aln=3
 for i in `seq 1 $num_aln`
 do
