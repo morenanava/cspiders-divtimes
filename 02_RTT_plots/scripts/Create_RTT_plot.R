@@ -2,7 +2,7 @@
 # This script, created for Nava et al 2024 creates a range through time plot  #
 # of pycnogonid fossils based on data from the PBDB which it loads, adds taxa #
 # to, and then plots. If you run the script line by line, it will create a    #
-# PDF in the root directory, which was then modified in inkscape for the      #
+# PDF in the root directory, which was then modified in Inkscape for the      #
 # figure used in publication                                                  #
 ###############################################################################
 
@@ -10,12 +10,11 @@
 rm( list = ls( ) )
 
 # If packages aren't installed, install them, then load them
-packages <- c( "palaeoverse", "here", "rstudioapi" )
+packages <- c( "palaeoverse", "rstudioapi" )
 if( length(packages[!packages %in% installed.packages()[,"Package"]]) > 0 ){
   install.packages( packages[!packages %in% installed.packages()[,"Package"]] )
 }
 library( "palaeoverse" )
-library( "here" )
 library( "rstudioapi" )
 
 # Get the path to current open R script and find main dir
@@ -78,7 +77,8 @@ Palaeomarachne[1,]$min_ma <- 445.2
 Palaeomarachne[1,]$accepted_name <- "Palaeomarachne granulata"
 Palaeomarachne[1,]$accepted_rank <- "species"
 Palaeomarachne[1,]$ref_pubyr <- 2002
-Palaeomarachne[1,]$taxonomy  <- "Stem"
+#Also Incertae sedisto reflect previous work by this team
+Palaeomarachne[1,]$taxonomy  <- "Incertae sedis"
 occurenceDataSpecies <- rbind( occurenceDataSpecies, Palaeomarachne )
 rm( Palaeomarachne )
 
@@ -87,7 +87,7 @@ if( dir.exists( "../plots/" ) == FALSE ){
   dir.create( "../plots/" )
 }
 #pdf(here("Pycnogonid_fossils.pdf"), width = 8, height = 5.5)
-pdf( file = "../plots/Pycnogonid_fossils.pdf", width = 8, height = 5.5 )
+pdf( file = "../plots/Pycnogonid_fossils.pdf", width = 9, height = 5.5 )
 mar.default <- c( 5,4,4,2 ) + 0.1
 par( mar = mar.default + c( 2, 0, 0, 0 ) )
 tax_range_time_RJG( occdf = occurenceDataSpecies, name = "genus", plot = TRUE,
