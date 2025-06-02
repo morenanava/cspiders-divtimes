@@ -34,38 +34,34 @@ source( "../../src/Functions.R" )
 
 
 # Path to your input text file that allows you to match the flags you have 
-# used to label the nodes that are to be calibrated with the calibration you 
-# want to use in `MCMCtree` format. If in the same directory,
-# you only need to write the name. If in a different directory, please
-# type the absolute or relative path to this file.
-# The format of this file meets the following criteria:
+# used to constrain node ages with the calibration you 
+# want to use in `MCMCtree` notation. The format you need to follow is given
+# below:
 #
 #   - Header.
 #   - One row per calibration.
-#   - No spaces at all, semi-colon separated,
-#   - There are 8 columns:
-#       - Name of calibration (no spaces!).
-#       - Name of tip 1 that leads to MRCA (no spaces!).
-#       - Name of tip 2 that leads to MRCA (no spaces!).
-#       - Minimum age.
-#       - Percentage for the tail that will be allowed from minimum age.
-#       - Maximum age.
-#       - Percentage for the tail that will be allowed from maximum age.      
-#       - If you want to specify directly the calibration in `MCMCtree` format,
-#         then type this calibration in the 8th column and leave columns 5-7
-#         blank (no spaces!).
+#   - No spaces at all, semi-colon separated.
+#   - There are 4 columns:
+#       - Name you want to give to the calibrated node (no spaces!).
+#       - Name of one of the tips (e.g., tip 1) that leads to MRCA (no spaces!).
+#       - Name of the other tip (e.g., tip 2) that leads to MRCA (no spaces!).
+#       - Calibration in `MCMCtree` notation (no spaces!). More details on the 
+#         `MCMCtree` notation you need to use in the fourth column in the PAML
+#         documentation:
+#         https://github.com/abacus-gene/paml/blob/master/doc/pamlDOC.pdf
 # 
-# E.g. 1: row in this text file to calibrate node "LBCA"
+# E.g.: Header and one row in a calibration text file:
 #
 # ```
-# # With columns 4-7
-# LBCA;Dorm3;ProtG29;3.225;1e-4;4.520;1e-5;
-# # With column 8 only
-# LBCA;Dorm3;ProtG29;;;;;'B(3.225,4.520,1e-4,1e-5)'
+# name;tip1;tip2;MCMCtree
+# root;sp1;sp2;'B(0.256,1.34,0.025,1e-300)'
 # ```
 #
-# If in doubt, please follow the same format as used in the calibrations file 
-# used for this analysis
+# NOTE: Always check that there is at least one blank line at the 
+# end of the this text file! Otherwise, you will get an error telling you that 
+# there is an incomplete final line in these files. This file needs to be
+# already in PHYLIP format. Please follow the same format as used in the 
+# example tree file provided.
 path_textconv <- c( "../00_raw_data/calibs/Calibs_noeurycyde.txt",
                     "../00_raw_data/calibs/Calibs_noUCEs.txt",
                     "../00_raw_data/calibs/Calibs_supaln.txt"
@@ -76,23 +72,25 @@ for( i in 1:length( all_calibs ) ){
   all_calibs[[ i ]] <- read.table( file = path_textconv[i],
                                    stringsAsFactors = FALSE, sep = ";",
                                    blank.lines.skip = TRUE, header = TRUE,
-                                   colClasses = rep( "character", 8 ) )
+                                   colClasses = rep( "character", 4 ) )
 }
 # Path to trees
 path_trees <- c( "../01_inp_data/tree_noeurycyde_uncalib.tree",
                  "../01_inp_data/tree_noUCEs_uncalib.tree",
                  "../01_inp_data/tree_supaln_uncalib.tree" )
-# Run `add_const` in-house pipeline to calibrate the tree
+# Run `add_node_const` function to calibrate the tree
 # 
 # Arguments:
-# tt            Phylo, object with the tree, previously generated
-# calibrations  Matrix, element of the list generated with the calibration
-#               info. E.g., `all_calibs[[1]]`
-# out_name      Character, name of the dataset analysed
-# out_dir_raw   Character, abs/rel path to the output directory for raw
-#               trees
-# out_dir_inp   Character, abs/rel path to th eoutput directory for inp data
-#
+# tt            Phylo, tree object.
+# calibrations  Matrix, calibration info, extract from object `all_calibs`. 
+#               E.g., `all_calibs[[1]]`
+# out_name      Character, name of the dataset analysed.
+# out_dir_raw   Character, abs/rel path to the output directory where 
+#               calibrated trees that can be visualised by graphical interfaces
+#               will be output alongside tmp trees that will be used by
+#               this function to generate input data for PAML programs.
+# out_dir_inp   Character, abs/rel path to the output directory where inp data
+#               that will be used by PAML programs will be saved.
 for( i in 1:length( path_trees ) ){
   tt_ape <- ape::read.tree( file = path_trees[i] )
   test   <- add_node_const( tt = tt_ape, calibrations = all_calibs[[ i ]],
