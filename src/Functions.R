@@ -1562,3 +1562,202 @@ QC_conv <- function( num_dirs, delcol, path, num_divt, node_calib, dataset, perc
   }
   
 }
+
+# Function to incorporate node age constraints following PAML notation
+#
+# Arguments:
+#
+# tt            Phylo, tree object.
+# calibrations  Matrix, calibration info, extract from object `all_calibs`. 
+#               E.g., `all_calibs[[1]]`
+# out_name      Character, name of the dataset analysed.
+# out_dir_raw   Character, abs/rel path to the output directory where 
+#               calibrated trees that can be visualised by graphical interfaces
+#               will be output alongside tmp trees that will be used by
+#               this function to generate input data for PAML programs.
+# out_dir_inp   Character, abs/rel path to the output directory where inp data
+#               that will be used by PAML programs will be saved.
+add_node_const <- function( tt, calibrations, out_name, out_dir_raw,
+                            out_dir_inp )
+{
+  # Print message regarding the data
+  cat( "\n\n[[ Topology to be calibrated: ", paste(out_name), " ]]\n" )
+  
+  # Parse input tree file
+  cat( "\n~~> Reading input tree file\n" )
+  tt_ape <- tt
+  keep_indexes <- matrix( 0, nrow = length(rownames(calibrations)),
+                          ncol = 3 )
+  # Generate empty vector with as many entries as nodes in the tree
+  tt_ape$node.label <- rep( NA, tt_ape$Nnode )
+  for( i in 1:length(rownames(calibrations)) ){
+    # Get calibration in the same format input by the user
+    node_lab <- calibrations[i,4]
+    # Get MRCA for these two tips
+    mrca <- ape::getMRCA( phy = tt_ape, tip = c( calibrations[i,2],
+                                                 calibrations[i,3]) )
+    keep_indexes[i,1] <- mrca-ape::Ntip(tt_ape)
+    keep_indexes[i,2] <- calibrations[i,1]
+    keep_indexes[i,3] <- paste( calibrations[i,2], "-",
+                                     calibrations[i,3], "-",
+                                     node_lab, sep = "" )
+    #print( mrca-ape::Ntip( tt_ape ) )
+    # Replace node label accordingly
+    tt_ape$node.label[mrca-ape::Ntip(tt_ape)] <- paste0( "[",
+                                                         calibrations[i,1],
+                                                         "]", collapse = "" )
+  }
+  # Find duplicates
+  ind_dup   <- which( duplicated(keep_indexes[,1]) == TRUE )
+  nodes_dup <- which( keep_indexes[,1] %in% as.numeric( keep_indexes[ind_dup,1] ) )
+  keep_indexes[nodes_dup,]
+  # Save tree with node labels
+  tt_all <- tt_ape
+  
+  ##>> ---
+  ## CHECK for duplicates
+  if( length( ind_dup ) > 0 ){
+    stop( "You have duplicated labels for some nodes.\n",
+          "Check your input text files and try again!\n" )
+  }
+  ##>> ---
+  
+  # Create dir if it does not exist
+  if( dir.exists( out_dir_raw ) == FALSE ){
+    dir.create( out_dir_raw )
+  }
+  # Remove "NA" from the labs
+  ind_na_bools <- is.na( x = tt_all$node.label )
+  ind_na       <- which( ind_na_bools == TRUE )
+  tt_all$node.label[ind_na] <- ""
+  # Write PHYLIP header, then the calibrated tree
+  writeLines( text = paste( length(tt_all$tip.label ), " 1", sep = "" ), 
+              con = paste( out_dir_raw, "cals_only_",
+                           out_name, ".tree", sep = "" ) )
+  ape::write.tree( phy = tt_all,
+                   file = paste( out_dir_raw, "cals_only_",
+                                 out_name, ".tree", sep = "" ),
+                   append = TRUE )
+  cat( "~~> Temporary file \"", paste( out_dir_raw, "cals_only_",
+                                            out_name, ".tree", sep = "" ),
+       "\" has been generated\n" )
+  #>> TEST
+  #tt_all$node.label[c(1)]
+  # plot.phylo(tt_all)
+  # nodelabels(text=1:tt_all$Nnode,node=1:tt_all$Nnode+Ntip(tt_all),
+  #            cex = 0.7, frame = "none" )
+  #>> SUCCESS!
+  # PLAN: Load the tree later to then replace with the corresponding
+  # calibrations following my old script
+  
+  #---------------------------------#
+  # READ TREE AND CALIBRATIONS FILE #
+  #---------------------------------#
+  # Read tree and get phylip header
+  # NOTE: Make always sure that there is at least one blank line at the 
+  # end of the tree file! Otherwise, you will get an error telling you that 
+  # there is an incomplete final line in these files.
+  tt_name <- paste( out_dir_raw, "cals_only_", out_name, ".tree", sep = "" )
+  #-------------------#
+  # Get PHYLIP header #
+  #-------------------#
+  tt            <- readLines( tt_name )
+  phylip.header <- tt[1]
+  tt            <- tt2 <- tt3 <- tt[2]
+    
+  #--------------------------------#
+  # REPLACE TAGS WITH CALIBRATIONS #
+  #--------------------------------#
+  # Replace calibration names with corresponding calibration
+  cat( "~~> Using \"cals_only_", out_name, ".tree\" file to append",
+       "calibrations in MCMCtree format...\n" )
+  for( j in 1:length( rownames( calibrations ) ) ){
+    # Get node label as input by user
+    node_lab <- calibrations[j,4]
+    # Get rid of unnecessary notation for susbequent formatting
+    tmp_calib <- gsub( x = node_lab, pattern = "\\(..*",
+                       replacement = "" )
+    tmp_calib <- gsub( x = tmp_calib, pattern = "[0-9]..*",
+                       replacement = "" )
+    # Conditional is used so that the single quotation marks are only kept 
+    # in the upper-bound calibration for the root. Inequality calibrations
+    # do not require single quotation marks
+    if( tmp_calib == 'B' || tmp_calib == 'U' || tmp_calib == 'L' ){
+      tt <- gsub( pattern = paste0( "\\[", calibrations[j,1], "\\]" ),
+                  x = tt,
+                  replacement = paste( "'", node_lab, "'", sep = "" ) )
+    }else{ # For cross-braced nodes
+      tt <- gsub( pattern = paste0( "\\[", calibrations[j,1], "\\]" ),
+                  x = tt,
+                  replacement = paste( node_lab, sep = "" ) )
+    }
+    # Copy to visualise in `FigTree`
+    reps <- gsub( x = gsub( x = gsub( x = gsub( x = gsub( x = node_lab,
+                                                          pattern = "\\{",
+                                                          replacement = "(" ),
+                                                pattern = "\\}",
+                                                replacement = ")" ), 
+                                      pattern = "\\[|\\]", replacement = "" ),
+                            pattern = "\\#", replacement = "flag" ),
+                  pattern = " ", replacement = "-" )
+    # For cross-braced calibrations without fossil
+    if( tmp_calib == '#' ){
+      reps <- gsub( x = gsub( x = reps, pattern = "\\#", replacement = "flag" ),
+                    pattern = "\\]", replacement = "" )
+      tt2 <- gsub( pattern = paste0( "\\[", calibrations[j,1], "\\]" ),
+                   x = tt2,
+                   replacement = paste0( "'", reps, "-", calibrations[j,1],
+                                         "'", collapse = "" ) )
+    }else{ # For the rest of calibrations
+      tt2 <- gsub( pattern = paste0( "\\[", calibrations[j,1], "\\]" ),
+                   x = tt2,
+                   replacement = paste0( "'", reps, "-", calibrations[j,1],
+                                         "'", collapse = "" ) )
+    }
+    # Generate an uncalibrated tree for `BASEML`/`CODEML`!
+    tt3 <- gsub( pattern = paste0( "\\[", calibrations[j,1], "\\]" ),
+                 x = tt3,
+                 replacement = "" )
+  }
+  
+  #-------------------------------#
+  # WRITE CALIBRATED TREE IN FILE #
+  #-------------------------------#
+  out_dir <- out_dir_inp
+  if( ! dir.exists( out_dir ) ){
+    dir.create( out_dir )
+  }
+  
+  # Write calibrated tree file and file to visualise in `FigTree`
+  write( x = phylip.header, file = paste( out_dir, out_name,
+                                          "_calib_MCMCtree.tree", sep = "" ) )
+  write( x = tt, file = paste( out_dir, out_name,
+                               "_calib_MCMCtree.tree", sep = "" ),
+         append = TRUE )
+  cat( "~~> Calibrated input tree file to be used by MCMCtree has been saved:",
+       "\n    \"", paste( out_dir, out_name, "_calib_MCMCtree.tree", sep = "" ),
+       "\"\n" )
+  write( x = phylip.header, file = paste( out_dir_raw, out_name,
+                                          "_fordisplay_calib_MCMCtree.tree",
+                                          sep = "" ) )
+  write( x = tt2, file = paste( out_dir_raw, out_name,
+                                "_fordisplay_calib_MCMCtree.tree", sep = "" ),
+         append = TRUE )
+  cat( "~~> Calibrated tree file to be visualised in graphical\n",
+       "   interfaces such as FigTree or TreeViewer has been saved:\n",
+       "   \"", paste( out_dir_raw, out_name, "_fordisplay_calib_MCMCtree.tree",
+              sep = "" ), "\"\n" )
+  # Write an uncalibrated tree file, only once (first iteration)!
+  uncal_f <- file( paste( out_dir, "tree_", out_name,
+                          "_uncalib.tree", sep = "" ), open = "wb" )
+  write( x = phylip.header, file = uncal_f, sep = "\n" )
+  write( x = tt3, file = uncal_f, sep = "\n", append = TRUE )
+  close( uncal_f )
+  cat( "~~> Uncalibrated input tree file to be used by CODEML or BASEML,\n",
+       "   depending on whether using AA or NUC data, has been saved:\n",
+       "   \"", paste( out_dir, "tree_", out_name, "_uncalib.tree", sep = "" ),
+       "\"\n" )
+  
+}
+
+
